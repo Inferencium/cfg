@@ -19,7 +19,7 @@ sys-devel/clang					default-compiler-rt default-lld default-libcxx
 sys-fs/cryptsetup				argon2 nls openssl udev reencrypt
 sys-kernel/gentoo-sources			symlink
 www-client/chromium				-hangouts -widevine
-www-client/firefox				hardened openh264 system-av1 system-harfbuzz system-icu system-jpeg system-libvpx system-webp
+www-client/firefox				hardened openh264 system-av1 system-harfbuzz system-icu system-jpeg system-libvpx system-webp -system-libevent
 x11-base/xwayland				xcsecurity
 
 >=media-libs/libglvnd-1.4.0			X
