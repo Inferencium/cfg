@@ -16,11 +16,10 @@ net-libs/nodejs					-lto -system-ssl
 sys-auth/polkit					duktape
 sys-block/parted				device-mapper verify-sig
 sys-devel/clang					default-compiler-rt default-lld default-libcxx
-#sys-devel/gcc					custom-cflags -hardened
 sys-fs/cryptsetup				argon2 nls openssl udev reencrypt
 sys-kernel/gentoo-sources			symlink
 www-client/chromium				-hangouts -widevine
-www-client/firefox				-hardened openh264 system-av1 system-harfbuzz system-icu system-jpeg system-libevent system-libvpx system-webp -lto -clang
+www-client/firefox				hardened openh264 system-av1 system-harfbuzz system-icu system-jpeg system-libevent system-libvpx system-webp
 x11-base/xwayland				xcsecurity
 
 >=media-libs/libglvnd-1.4.0			X
@@ -61,11 +60,4 @@ sys-libs/llvm-libunwind				static-libs
 sys-libs/libcxx					static-libs
 sys-libs/libcxxabi				static-libs
 sys-devel/clang-runtime				libcxx
-# required by gui-wm/sway-1.7::gentoo
-# required by @selected
-# required by @world (argument)
 >=gui-libs/wlroots-0.15.0-r2 X
-# required by media-libs/libsvgtiny-0.1.7-r2::gentoo
-# required by www-client/netsurf-3.10-r6::libressl[svgtiny,svg]
-# required by www-client/netsurf::libressl (argument)
->=net-libs/libdom-0.4.1-r1 xml
