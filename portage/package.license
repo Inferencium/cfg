@@ -1,0 +1,2 @@
+fs-util/fsverity-utils		GPLv2
+sys-kernel/linux-firmware	@BINARY-REDISTRIBUTABLE
