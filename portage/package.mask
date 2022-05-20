@@ -13,7 +13,6 @@ dev-java/icedtea-bin::gentoo
 dev-java/openjdk::gentoo
 dev-lang/rust::gentoo
 dev-lang/rust-bin::gentoo
-dev-libs/openssl::gentoo
 dev-python/pypy3-exe::gentoo
 dev-util/dwarves::gentoo
 dev-util/kbuild::gentoo
