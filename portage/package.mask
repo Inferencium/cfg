@@ -1,3 +1,8 @@
+# Portage package.mask
+
+# Copyright 2022 Inference
+
+
 # Global.
 #*/*x11*
 #*/*xorg*
@@ -6,13 +11,12 @@ gui-wm/hikari
 sys-libs/libunwind
 
 # Gentoo repository.
-sys-fs/lvm2::gentoo
 app-office/libreoffice::gentoo
-dev-java/icedtea::gentoo
 dev-java/icedtea-bin::gentoo
+dev-java/icedtea::gentoo
 dev-java/openjdk::gentoo
-dev-lang/rust::gentoo
 dev-lang/rust-bin::gentoo
+dev-lang/rust::gentoo
 dev-python/pypy3-exe::gentoo
 dev-util/dwarves::gentoo
 dev-util/kbuild::gentoo
@@ -47,6 +51,7 @@ sys-block/thin-provisioning-tools::gentoo
 sys-boot/lilo::gentoo
 sys-boot/syslinux::gentoo
 sys-devel/gdb::gentoo
+sys-fs/lvm2::gentoo
 sys-fs/lvm2::gentoo
 sys-fs/reiserfsprogs::gentoo
 sys-libs/tevent::gentoo
