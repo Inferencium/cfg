@@ -1,0 +1,295 @@
+; root filesystem module configuration.
+[module/filesystem0]
+type = internal/fs
+interval = 1
+mount-0 = /
+label-mounted = " /: %used%/%total% "
+label-mounted-background = #c79500
+label-mounted-foreground = #000000
+label-unmounted = "  /:  "
+label-unmounted-background = #c79500
+label-unmounted-foreground = #000000
+
+; home filesystem module configuration.
+[module/filesystem1]
+type = internal/fs
+interval = 1
+mount-0 = /home
+label-mounted = "  /home:  %used%/%total% "
+label-mounted-background = #c79500
+label-mounted-foreground = #000000
+label-unmounted = "  /home:   "
+label-unmounted-background = #c79500
+label-unmounted-foreground = #000000
+
+; CPU module configuration.
+[module/cpu]
+type = internal/cpu
+interval = 1
+label = "  %percentage:3%% "
+label-background = #003487
+label-foreground = #ffffff
+
+; Physical memory module configuration.
+[module/memory0]
+type = internal/memory
+interval = 1
+label = "  %gb_used%/%gb_total% "
+label-background = #a60000
+label-foreground = #ffffff
+
+; Virtual memory module configuration.
+[module/memory1]
+type = internal/memory
+interval = 1
+label = "  %gb_swap_used%/%gb_swap_total% "
+label-background = #a60000
+label-foreground = #ffffff
+
+; Ethernet module configuration.
+[module/eth]
+type = internal/network
+interface = eth0
+interval = 1
+label-connected = "      "
+label-connected-background = #007a00
+label-connected-foreground = #ffffff
+format-disconnected = <label-disconnected>
+label-disconnected = "      "
+label-disconnected-background = #007a00
+label-disconnected-foreground = #ffffff
+
+; Wi-Fi module configuration.
+[module/wlan]
+type = internal/network
+interface = wlan0
+interval = 1
+format-connected = <label-connected>
+label-connected = "     "
+label-connected-background = #007a00
+label-connected-foreground = #ffffff
+format-disconnected = <label-disconnected>
+label-disconnected = "     "
+label-disconnected-background = #007a00
+label-disconnected-foreground = #ffffff
+
+; Public IP address module configuration.
+[module/ip-public]
+type = custom/script
+exec = curl -s https://www.icanhazip.com
+label-padding = 1
+format = <label>
+label = %output:15%
+label-background = #007a00
+label-foreground = #ffffff
+
+; Audio module configuration.
+[module/pulseaudio]
+type = internal/pulseaudio
+format-volume = <label-volume>
+label-volume = "  %percentage:3%% "
+label-volume-foreground = #bcbcbc
+label-muted = "  MUTE "
+label-muted-foreground = #bcbcbc
+
+; Battery percent module configuration.
+[module/battery-pc]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 95
+format-charging = <label-charging>
+format-discharging = <label-discharging>
+label-full = "  %percentage:3%%  "
+label-full-background = #000000
+label-full-foreground = #bcbcbc
+label-charging = "    %percentage:3%%  "
+label-charging-background = #000000
+label-charging-foreground = #ffbf00
+label-discharging = "  %percentage:3%%  "
+label-discharging-background = #000000
+label-discharging-foreground = #bcbcbc
+ramp-capacity-0 =
+ramp-capacity-1 =
+ramp-capacity-2 =
+ramp-capacity-3 =
+ramp-capacity-4 =
+ramp-capacity-0-foreground = #c79500
+
+; Battery time remaining module configuration.
+[module/battery-tm]
+type = internal/battery
+battery = BAT0
+format-full = <label-full>
+format-charging = <label-charging>
+format-discharging = <label-discharging>
+time-format = %H:%M
+label-full = "          "
+label-full-background = #000000
+label-full-foreground = #bcbcbc
+label-charging = "   %time%  "
+label-charging-background = #000000
+label-charging-foreground = #bcbcbc
+label-discharging = "   %time%  "
+label-discharging-background = #000000
+label-discharging-foreground = #bcbcbc
+
+; CPU temperature module configuration.
+;[module/temperature0]
+;type = internal/temperature
+;hwmon-path = /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon3/temp1_input
+;thermal-zone = 0
+;warn-temperature = 80
+;interval = 1
+;format = <label>
+;label = " %temperature-c% "
+;label-background = #003487
+;label-foreground = #ffffff
+;format-warn = <label-warn>
+;label-warn = "%temperature-c% "         
+;label-warn-background = #003487
+;label-warn-foreground = #a60000
+
+[module/cpu-temp]
+type = custom/script
+exec = /cfg/polybar/cpu-temp.sh
+interval = 1
+label-background = #003487
+label-foreground = #ffffff
+
+; GPU temperature module configuration.
+[module/temperature1]
+type = internal/temperature
+hwmon-path = /sys/devices/pci0000:00/0000:00:08.1/0000:04:00.0/hwmon/hwmon4/temp1_input
+thermal-zone = 0
+warn-temperature = 80
+interval = 1
+format = <label>
+label = "  %temperature-c% "
+label-background = #6600cc
+label-foreground = #ffffff
+format-warn = <label-warn>
+label-warn = "  %temperature-c% "
+label-warn-background = #6600cc
+label-warn-foreground = #a60000
+
+; Storage temperature module configuration.
+[module/temperature2]
+type = internal/temperature
+hwmon-path = /sys/devices/virtual/nvme-subsystem/nvme-subsys0/nvme0/hwmon0/temp1_input
+thermal-zone = 0
+warn-temperature = 80
+interval = 1
+format = <label>
+label = "  %temperature-c% "
+label-background = #c79500
+label-foreground = #000000
+format-warn = <label-warn>
+label-warn = "  %temperature-c% "
+
+; Backlight module configuration.
+[module/backlight]
+type = internal/backlight
+card = amdgpu_bl0
+format = <label>
+label = "  %percentage:3%% "
+label-foreground = #bcbcbc
+enable-scroll = false
+
+; cmus module configuration.
+[module/cmus]
+type = custom/script
+exec = cmus-remote -C 'format_print %F'
+exec-if = pgrep -x cmus
+interval = 1
+label-font = 3
+format = <label>
+format-underline = ${colors.foreground-alt}
+label = %output%
+label-maxlen = 80
+
+; CPU frequency module configuration.
+[module/cpu-frq]
+type = custom/script
+exec = $HOME/.config/polybar/cpu-frq.sh
+interval = 1
+label-background = #003487
+label-foreground = #ffffff
+
+; Blank module.
+[module/blank]
+type = custom/script
+exec = echo "    "
+label-background = #000000
+label-foreground = #999999
+
+; CPU blank module - large.
+[module/cpu-blank-l]
+type = custom/script
+exec = echo "    "
+label-background = #003487
+label-foreground = #ffffff
+
+; CPU blank module - small.
+[module/cpu-blank-s]
+type = custom/script
+exec = echo " "
+label-background = #003487
+label-foreground = #ffffff
+
+[settings]
+screenchange-reload = true
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+[bar/polybar0]
+width = 100%
+height = 25
+radius = 0.0
+fixed-center = false
+background = #000000
+foreground = #bcbcbc
+line-size = 0
+line-color = #f00
+border-size = 0
+border-color = #000000
+padding-left = 0
+padding-right = 0
+module-margin-left = 0
+module-margin-right = 0
+font-0 = monospace:pixelsize=12;1
+font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=11;2"
+font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=11;2"
+font-3 = "Font Awesome 5 Brands:style=Regular:pixelsize=11;2"
+modules-left = date
+modules-center = i3
+modules-right = pulseaudio backlight xkeyboard cpu memory0 memory1 filesystem1 eth wlan battery-pc
+wm-restack = i3
+override-redirect = false
+
+[bar/polybar1]
+width = 100%
+height = 22
+radius = 0.0
+fixed-center = false
+background = #000000
+foreground = #bcbcbc
+line-size = 0
+line-color = #f00
+border-size = 0
+border-color = #000000
+padding-left = 0
+padding-right = 0
+module-margin-left = 0
+module-margin-right = 0
+font-0 = monospace:pixelsize=12;1
+font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=11;2"
+font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=11;2"
+font-3 = "Font Awesome 5 Brands:style=Regular:pixelsize=11;2"
+modules-left = cmus
+modules-center =
+modules-right = cpu-blank-s cpu-blank-s cpu-blank-l cpu-frq cpu-blank-l cpu-temp cpu-blank-s cpu-blank-s cpu-blank-s cpu-blank-s cpu-blank-l cpu-blank-l cpu-blank-l cpu-blank-l cpu-blank-l cpu-blank-l filesystem0 temperature2 ip-public battery-tm
+wm-restack = i3
+override-redirect = false
