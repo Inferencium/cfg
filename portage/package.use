@@ -43,7 +43,7 @@ media-video/ffmpeg-4.4.1-r2			X sdl
 media-video/mpv					cli -xv
 net-dns/dnsmasq-2.85				script
 net-im/profanity				gpg omemo otr
-net-libs/nodejs					-lto -system-ssl
+net-libs/nodejs					-lto
 sys-auth/polkit					duktape
 sys-block/parted				device-mapper verify-sig
 sys-devel/clang					default-compiler-rt default-lld default-libcxx
