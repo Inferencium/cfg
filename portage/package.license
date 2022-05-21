@@ -1,2 +1,7 @@
-fs-util/fsverity-utils		GPLv2
+# Portage package.license
+
+# Copyright 2022 Inference
+
+
+fs-util/fsverity-utils		GPL-2
 sys-kernel/linux-firmware	@BINARY-REDISTRIBUTABLE
