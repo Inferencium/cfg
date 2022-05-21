@@ -1,63 +1,65 @@
+# Portage package.use
+
+# Copyright 2022 Inference
+
+
 app-admin/keepassxc				autotype yubikey -network
+app-crypt/gcr-3.40.0				gtk
+app-text/poppler-22.01.0			cairo
+app-text/xmlto-0.0.28-r6			text
+dev-cpp/gtkmm-3.24.5:3.0			X
+dev-libs/libedit				static-libs
 dev-libs/libpcre				-readline
 dev-libs/libpcre2				-readline
+dev-qt/qtcore-5.15.2-r14			icu
+dev-qt/qtgui					eglfs jpeg
+dev-qt/qtgui-5.15.2-r16				egl
+dev-qt/qtgui-5.15.3				X
 gui-apps/grim					jpeg
 gui-apps/waybar					mpd network -popups -sndio -tray
+gui-libs/wlroots-0.15.0-r2			X
 gui-wm/sway					man swaybg swayidle swaylock swaymsg mwaynag X -swaybar
+kde-frameworks/knotifications-5.90.0		X
+kde-frameworks/kwindowsystem-5.90.0-r1		X
 media-fonts/noto				cjk
 media-libs/babl					lcms introspection
 media-libs/freeimage				jpeg jpeg2k png raw tiff webp
+media-libs/gegl-0.4.32				cairo
+media-libs/gegl-0.4.32				introspection lcms
+media-libs/imlib2-1.7.1-r2			X
+media-libs/libepoxy-1.5.9-r1			X
+media-libs/libglvnd-1.4.0			X
+media-libs/libpng-1.6.37-r2			apng
 media-libs/libraw				jpeg
 media-libs/libsdl2				gles2 opengl X
+media-libs/libsndfile				minimal
+media-libs/libsndfile-1.1.0-r1			-minimal
+media-libs/libvpx-1.10.0			postproc
+media-libs/mesa-21.3.5				X
+media-libs/mlt-7.4.0				qt5 ffmpeg frei0r xml sdl
 media-libs/opencv				contrib contribdnn
+media-plugins/alsa-plugins-1.2.2		pulseaudio
+media-video/ffmpeg-4.4.1-r2			X sdl
 media-video/mpv					cli -xv
+net-dns/dnsmasq-2.85				script
 net-im/profanity				gpg omemo otr
 net-libs/nodejs					-lto -system-ssl
 sys-auth/polkit					duktape
 sys-block/parted				device-mapper verify-sig
 sys-devel/clang					default-compiler-rt default-lld default-libcxx
+sys-devel/clang-runtime				libcxx
 sys-fs/cryptsetup				argon2 nls openssl udev reencrypt
 sys-kernel/gentoo-sources			symlink
+sys-libs/libcxx					static-libs
+sys-libs/libcxxabi				static-libs
+sys-libs/llvm-libunwind				static-libs
+sys-libs/ncurses-6.3_p20211106			static-libs
+sys-libs/zlib-1.2.11-r4				minizip
 www-client/chromium				-hangouts -widevine
 www-client/firefox				hardened openh264 system-av1 system-harfbuzz system-icu system-jpeg system-libvpx system-webp -system-libevent
 x11-base/xwayland				xcsecurity
-
->=media-libs/libglvnd-1.4.0			X
->=app-text/poppler-22.01.0			cairo
->=media-libs/gegl-0.4.32			cairo
->=x11-libs/cairo-1.16.0-r5			X
->=x11-libs/gtk+-3.24.30				X
->=media-libs/libvpx-1.10.0			postproc
->=media-libs/libepoxy-1.5.9-r1			X
->=media-libs/mesa-21.3.5			X
->=media-plugins/alsa-plugins-1.2.2		pulseaudio
->=x11-libs/libxkbcommon-1.3.1			X
->=x11-libs/pango-1.48.10-r1			X
->=sys-libs/zlib-1.2.11-r4			minizip
->=dev-cpp/gtkmm-3.24.5:3.0			X
->=app-crypt/gcr-3.40.0				gtk
->=dev-qt/qtgui-5.15.2-r16			egl
->=media-libs/gegl-0.4.32			introspection lcms
->=net-dns/dnsmasq-2.85				script
->=media-libs/mlt-7.4.0				qt5 ffmpeg frei0r xml sdl
->=media-video/ffmpeg-4.4.1-r2			X sdl
->=app-text/xmlto-0.0.28-r6			text
->=kde-frameworks/kwindowsystem-5.90.0-r1	X
->=kde-frameworks/knotifications-5.90.0		X
->=dev-qt/qtcore-5.15.2-r14			icu
->=media-libs/imlib2-1.7.1-r2			X
-dev-qt/qtgui					eglfs jpeg
->=media-libs/libpng-1.6.37-r2			apng
->=x11-libs/libdrm-2.4.109			video_cards_radeon
-media-libs/libsndfile				minimal
->=gui-libs/wlroots-0.15.0-r2			X
->=dev-qt/qtgui-5.15.3				X
->=gui-libs/wlroots-0.15.0-r2			-X
->=media-libs/libsndfile-1.1.0-r1		-minimal
-dev-libs/libedit				static-libs
-sys-libs/llvm-libunwind				static-libs
->=sys-libs/ncurses-6.3_p20211106		static-libs
-sys-libs/libcxx					static-libs
-sys-libs/libcxxabi				static-libs
-sys-devel/clang-runtime				libcxx
->=gui-libs/wlroots-0.15.0-r2 X
+x11-libs/cairo-1.16.0-r5			X
+x11-libs/gtk+-3.24.30				X
+x11-libs/libdrm-2.4.109				video_cards_radeon
+x11-libs/libxkbcommon-1.3.1			X
+x11-libs/pango-1.48.10-r1			X
