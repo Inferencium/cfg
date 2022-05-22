@@ -63,3 +63,4 @@ x11-libs/gtk+					X
 x11-libs/libdrm					video_cards_radeon
 x11-libs/libxkbcommon				X
 x11-libs/pango					X
+sys-kernel/linux-firmware			savedconfig
