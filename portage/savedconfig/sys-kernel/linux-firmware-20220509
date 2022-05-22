@@ -5,7 +5,6 @@
 
 amd/amd_sev_fam17h_model0xh.sbin
 amd/amd_sev_fam17h_model3xh.sbin
-amd/amd_sev_fam19h_model0xh.sbin
 amd-ucode/microcode_amd.bin
 amd-ucode/microcode_amd_fam17h.bin
 amdgpu/raven_asd.bin
