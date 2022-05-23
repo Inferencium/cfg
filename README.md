@@ -3,7 +3,7 @@
 <br>
 <br>
 <h2>Licensing</h2>
-<p>All configuration files are licensed under MIT License.</p>
+<p>All content is licensed under MIT License.</p>
 <br>
 <br>
 <h2>Security</h2>
