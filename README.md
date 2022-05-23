@@ -15,6 +15,30 @@ The maintainers take no responsibility for any security issues which<br>
 may arise due to usage of this repository.</p>
 <br>
 <br>
+<h2>Policy</h2>
+<h3>Contributing</h3>
+<p>To contribute to the project, submit a pull request. All pull requests<br>
+are subject to approval.<br>
+<br>
+Code must follow the standard style for Inferencium Network code:<br>
+- 80 character column limit.<br>
+- Tab indents.<br>
+- 1 tab indent equals 4 columns.<br>
+- Comments must be used for each different block of code.<br>
+- Comments must be concise. Do not make comments longer than necessary.<br>
+- Code and comments must be professional. No funny or vulgar code or<br>
+comments.<br>
+<br>
+Files must be stored in their related directories.<br>
+<br>
+Text files must be stored as plain text (.txt) or Markdown (.md) files.<br>
+<br>
+All dates and times must be ISO 8601 compliant (YYYY-MM-DD HH:MM).<br>
+<br>
+All filenames must be most significant to least significant, lowercase, and<br>
+hyphens must be used instead of spaces.</p>
+<br>
+<br>
 <h2>Branches</h2>
 <h3>dev</h3>
 <p>Development branch. All pre-alpha development and alpha testing happens<br/>
