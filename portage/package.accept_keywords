@@ -6,6 +6,7 @@
 <media-gfx/gimp-3.0.0			**
 dev-lang/rust::yemou-overlay		~amd64
 dev-libs/date				~amd64
+dev-libs/icu				~amd64
 dev-libs/libfmt				~amd64
 dev-libs/libstrophe			~amd64
 dev-libs/nss				~amd64
