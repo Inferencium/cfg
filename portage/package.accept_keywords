@@ -4,6 +4,7 @@
 
 
 <media-gfx/gimp-3.0.0			**
+app-arch/unrar				~amd64
 dev-lang/rust::yemou-overlay		~amd64
 dev-libs/date				~amd64
 dev-libs/icu				~amd64
