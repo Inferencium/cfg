@@ -20,6 +20,7 @@ gui-apps/wofi				~amd64
 media-libs/babl				~amd64
 media-libs/dav1d			~amd64
 media-libs/gegl				~amd64
+media-video/shotcut			~amd64
 net-im/gomuks				~amd64
 net-im/profanity			~amd64
 sys-fs/jmtpfs				~amd64
