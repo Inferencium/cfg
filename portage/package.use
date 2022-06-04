@@ -64,3 +64,8 @@ x11-libs/libdrm					video_cards_radeon
 x11-libs/libxkbcommon				X
 x11-libs/pango					X
 sys-kernel/linux-firmware			savedconfig
+# required by app-emulation/libvirt-8.2.0::gentoo[virt-network]
+# required by app-emulation/libvirt-glib-4.0.0::gentoo
+# required by app-emulation/virt-manager-4.0.0::gentoo[-test]
+# required by app-emulation/virt-manager (argument)
+>=net-dns/dnsmasq-2.85 ipv6
