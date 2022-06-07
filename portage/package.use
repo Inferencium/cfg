@@ -64,5 +64,5 @@ x11-libs/libdrm					video_cards_radeon
 x11-libs/libxkbcommon				X
 x11-libs/pango					X
 sys-kernel/linux-firmware			savedconfig
-net-dns/dnsmasq-2.85				ipv6
+net-dns/dnsmasq					ipv6
 media-libs/sdl2-image				gif jpeg png tiff webp
