@@ -66,3 +66,4 @@ x11-libs/pango					X
 sys-kernel/linux-firmware			savedconfig
 net-dns/dnsmasq					ipv6
 media-libs/sdl2-image				gif jpeg png tiff webp
+dev-lang/rust					-verify-sig
