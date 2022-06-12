@@ -67,3 +67,4 @@ sys-kernel/linux-firmware			savedconfig
 net-dns/dnsmasq					ipv6
 media-libs/sdl2-image				gif jpeg png tiff webp
 dev-lang/rust					-verify-sig
+media-libs/libpulse				X
