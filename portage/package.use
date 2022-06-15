@@ -8,13 +8,14 @@ app-crypt/gcr					gtk
 app-text/poppler				cairo
 app-text/xmlto					text
 dev-cpp/gtkmm					X
+dev-lang/rust					-verify-sig
 dev-libs/libedit				static-libs
 dev-libs/libpcre				-readline
 dev-libs/libpcre2				-readline
 dev-qt/qtcore					icu
-dev-qt/qtgui					eglfs jpeg
-dev-qt/qtgui					egl
 dev-qt/qtgui					X
+dev-qt/qtgui					egl
+dev-qt/qtgui					eglfs jpeg
 gui-apps/grim					jpeg
 gui-apps/waybar					mpd network -popups -sndio -tray
 gui-libs/wlroots				X
@@ -30,17 +31,20 @@ media-libs/imlib2				X
 media-libs/libepoxy				X
 media-libs/libglvnd				X
 media-libs/libpng				apng
+media-libs/libpulse				X
 media-libs/libraw				jpeg
 media-libs/libsdl2				gles2 opengl X
-media-libs/libsndfile				minimal
 media-libs/libsndfile				-minimal
+media-libs/libsndfile				minimal
 media-libs/libvpx				postproc
 media-libs/mesa					X
 media-libs/mlt					qt5 ffmpeg frei0r xml sdl
 media-libs/opencv				contrib contribdnn
+media-libs/sdl2-image				gif jpeg png tiff webp
 media-plugins/alsa-plugins			pulseaudio
 media-video/ffmpeg				X sdl
 media-video/mpv					cli -xv
+net-dns/dnsmasq					ipv6
 net-dns/dnsmasq					script
 net-im/profanity				gpg omemo otr
 net-libs/nodejs					-lto
@@ -50,6 +54,7 @@ sys-devel/clang					default-compiler-rt default-lld default-libcxx
 sys-devel/clang-runtime				libcxx
 sys-fs/cryptsetup				argon2 nls openssl udev reencrypt
 sys-kernel/gentoo-sources			symlink
+sys-kernel/linux-firmware			savedconfig
 sys-libs/libcxx					static-libs
 sys-libs/libcxxabi				static-libs
 sys-libs/llvm-libunwind				static-libs
@@ -63,8 +68,3 @@ x11-libs/gtk+					X
 x11-libs/libdrm					video_cards_radeon
 x11-libs/libxkbcommon				X
 x11-libs/pango					X
-sys-kernel/linux-firmware			savedconfig
-net-dns/dnsmasq					ipv6
-media-libs/sdl2-image				gif jpeg png tiff webp
-dev-lang/rust					-verify-sig
-media-libs/libpulse				X
