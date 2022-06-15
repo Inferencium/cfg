@@ -1,6 +1,14 @@
 <h1>Configuration</h1>
 <p>Inference personal configuration files.</p>
 <br>
+<p>These configuration files are targeting Linux, Gentoo Hardened,<br>
+musl libc, and LLVM toolchain. Anything else is out of scope and<br>
+unsupported. I am working on moving all GCC-related configurations to LLVM,<br>
+and GCC will eventually be dropped, entirely. They also focus on hardening<br>
+the system as much as possible, without making it unusable; expect<br>
+noticeable performance impact, although the system should still be usable.<br>
+Security and privacy are the focuses, nothing else.
+<br>
 <br>
 <h2>Licensing</h2>
 <p>All content is licensed under MIT License.</p>
