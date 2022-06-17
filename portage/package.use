@@ -60,7 +60,7 @@ sys-libs/libcxxabi				static-libs
 sys-libs/llvm-libunwind				static-libs
 sys-libs/ncurses				static-libs
 sys-libs/zlib					minizip
-www-client/chromium				lto proprietary-codecs system-harfbuzz system-icu system-png vaapi -libcxx
+www-client/chromium				lto proprietary-codecs system-harfbuzz system-icu system-png vaapi -hangouts -js-type-check -libcxx -suid -X
 www-client/firefox				hardened openh264 system-av1 system-harfbuzz system-icu system-jpeg system-libvpx system-webp -system-libevent
 x11-base/xwayland				xcsecurity
 x11-libs/cairo					X
@@ -69,7 +69,7 @@ x11-libs/libdrm					video_cards_radeon
 x11-libs/libxkbcommon				X
 x11-libs/pango					X
 dev-libs/libxml2				icu
-media-libs/harfbuzz				icu
-media-libs/libpng				-apng
+media-libs/harfbuzz				icu glib introspection truetype
+media-libs/libpng				apng
 x11-libs/libva					X
 net-libs/nodejs					inspector
