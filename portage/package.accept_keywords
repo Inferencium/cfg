@@ -15,6 +15,7 @@ dev-libs/olm				~amd64
 dev-libs/spdlog				~amd64
 dev-util/cbindgen			~amd64
 fs-util/fsverity-utils			~amd64
+games-action/minetest			~amd64
 games-rpg/cataclysm-dda			~amd64
 gui-apps/waybar				~amd64
 gui-apps/wofi				~amd64
