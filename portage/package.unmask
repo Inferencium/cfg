@@ -13,4 +13,3 @@ sys-libs/libcxx
 sys-libs/libcxxabi
 sys-libs/llvm-libunwind
 www-client/chromium
-www-client/firefox
