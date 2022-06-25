@@ -9,6 +9,7 @@
 app-admin/sudo
 gui-wm/hikari
 sys-libs/libunwind
+www-client/firefox
 
 # Gentoo repository.
 app-office/libreoffice::gentoo
