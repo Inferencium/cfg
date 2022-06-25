@@ -62,7 +62,6 @@ sys-libs/llvm-libunwind				static-libs
 sys-libs/ncurses				static-libs
 sys-libs/zlib					minizip
 www-client/chromium				lto proprietary-codecs system-allocator system-harfbuzz system-icu -system-png vaapi -hangouts -js-type-check -libcxx -suid -X
-www-client/firefox				hardened openh264 system-av1 system-harfbuzz system-icu system-jpeg system-libvpx system-webp -system-libevent
 x11-base/xwayland				xcsecurity
 x11-libs/cairo					X
 x11-libs/gtk+					X
