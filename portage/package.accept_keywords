@@ -34,4 +34,3 @@ sys-libs/libucontext			~amd64
 sys-libs/musl-legacy-compat		~amd64
 virtual/rust				~amd64
 www-client/chromium			~amd64
-www-client/firefox			~amd64
