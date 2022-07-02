@@ -73,3 +73,29 @@ media-libs/harfbuzz				icu glib introspection truetype
 media-libs/libpng				-apng
 x11-libs/libva					X
 net-libs/nodejs					inspector
+
+# required by dev-python/PyQtWebEngine-5.15.5::gentoo
+# required by media-video/openshot-2.6.1::gentoo[python_single_target_python3_9]
+# required by media-video/openshot (argument)
+>=dev-python/PyQt5-5.15.6 widgets svg gui webchannel network printsupport
+# required by media-libs/libopenshot-0.2.7::gentoo
+# required by media-video/openshot-2.6.1::gentoo
+# required by media-video/openshot (argument)
+>=dev-qt/qtmultimedia-5.15.4-r1 widgets
+# required by media-libs/libopenshot-0.2.7::gentoo
+# required by media-video/openshot-2.6.1::gentoo
+# required by media-video/openshot (argument)
+>=media-video/ffmpeg-4.4.2 xvid theora mp3 x264 vpx vorbis
+# required by dev-python/pyzmq-23.0.0::gentoo[-test]
+# required by media-video/openshot-2.6.1::gentoo[python_single_target_python3_9]
+# required by media-video/openshot (argument)
+>=net-libs/zeromq-4.3.4-r1 drafts
+# required by dev-python/PyQtWebEngine-5.15.5::gentoo
+# required by media-video/openshot-2.6.1::gentoo[python_single_target_python3_9]
+# required by media-video/openshot (argument)
+>=dev-qt/qtwebengine-5.15.4_p20220526 widgets
+# required by dev-qt/qtwebengine-5.15.4_p20220526::gentoo
+# required by dev-python/PyQtWebEngine-5.15.5::gentoo
+# required by media-video/openshot-2.6.1::gentoo[python_single_target_python3_9]
+# required by media-video/openshot (argument)
+>=dev-qt/qtwebchannel-5.15.4 qml
