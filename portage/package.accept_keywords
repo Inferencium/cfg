@@ -5,8 +5,6 @@
 
 <media-gfx/gimp-3.0.0			**
 app-arch/unrar				~amd64
-dev-games/irrlicht-mt			~amd64
-dev-games/irrlicht-mt-headers		~amd64
 dev-lang/rust::yemou-overlay		~amd64
 dev-libs/date				~amd64
 dev-libs/icu				~amd64
@@ -17,7 +15,6 @@ dev-libs/olm				~amd64
 dev-libs/spdlog				~amd64
 dev-util/cbindgen			~amd64
 fs-util/fsverity-utils			~amd64
-games-action/minetest			~amd64
 games-rpg/cataclysm-dda			~amd64
 gui-apps/waybar				~amd64
 gui-apps/wofi				~amd64
