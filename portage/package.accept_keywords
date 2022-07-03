@@ -13,7 +13,6 @@ dev-libs/libstrophe			~amd64
 dev-libs/nss				~amd64
 dev-libs/olm				~amd64
 dev-libs/spdlog				~amd64
-dev-util/cbindgen			~amd64
 fs-util/fsverity-utils			~amd64
 games-rpg/cataclysm-dda			~amd64
 gui-apps/waybar				~amd64
@@ -21,7 +20,6 @@ gui-apps/wofi				~amd64
 media-libs/babl				~amd64
 media-libs/dav1d			~amd64
 media-libs/gegl				~amd64
-media-video/shotcut			~amd64
 net-im/gomuks				~amd64
 net-im/profanity			~amd64
 net-misc/ytfzf				~amd64
