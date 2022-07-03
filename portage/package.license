@@ -3,6 +3,8 @@
 # Copyright 2022 Inference
 
 
+*/*				GPL-2
+*/*				GPL-3
+*/*				MIT
 app-arch/unrar			unRAR
-fs-util/fsverity-utils		GPL-2
 sys-kernel/linux-firmware	@BINARY-REDISTRIBUTABLE
