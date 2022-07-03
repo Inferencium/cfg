@@ -24,6 +24,7 @@ media-libs/gegl				~amd64
 media-video/shotcut			~amd64
 net-im/gomuks				~amd64
 net-im/profanity			~amd64
+met-misc/ytfzf				~amd64
 sys-fs/jmtpfs				~amd64
 sys-libs/libexecinfo			~amd64
 sys-libs/libomp				~amd64
