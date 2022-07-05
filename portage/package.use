@@ -47,7 +47,7 @@ media-video/ffmpeg				X sdl
 media-video/mpv					cli -xv
 net-dns/dnsmasq					ipv6
 net-dns/dnsmasq					script
-net-im/profanity				gpg omemo otr
+net-im/profanity				omemo -gpg -otr
 net-libs/nodejs					-lto
 sys-auth/polkit					duktape
 sys-block/parted				device-mapper verify-sig
