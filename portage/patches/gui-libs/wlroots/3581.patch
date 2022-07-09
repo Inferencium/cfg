@@ -1,0 +1,114 @@
+From 988fe5bda9c11c4b2a25e998bd0329c70cc487a0 Mon Sep 17 00:00:00 2001
+From: Rouven Czerwinski <rouven@czerwinskis.de>
+Date: Fri, 27 May 2022 20:47:34 +0200
+Subject: [PATCH] relative_pointer: handle inert pointer objects
+
+Since 5e0ef70cc085 ("seat: Create inert objects for missing capabilities")
+wlroots can create inert seat objects when the capability is currently missing
+for the client but it had the capablity before. The client hoever will happily
+handover the wl_pointer resource to the relative_pointer implementation,
+creating a NULL pointer dereference when trying to access the seat_client which
+is set to NULL for inert objects.
+
+Since the protocol does not contain an error for such requests, we hand out an
+relative_pointer handle with the seat set to NULL.
+We also need to check whether there is an associated seat in
+send_relative_motion and need to tweak the destroy notifier in case no seat is
+available.
+
+This way we can hand out a valid relative_pointer resource and don't crash the
+compositor when trying to access an inert seat pointer resource in
+relative_pointer.
+
+Relevant WAYLAND_DEBUG=1 when testing a client and switching VT every second:
+[2619872.442] wl_seat@30.capabilities(3)
+[2619872.460]  -> wl_seat@30.get_pointer(new id wl_pointer@36)
+[2619872.484] wl_data_device@25.selection(nil)
+[2619872.504] zwp_primary_selection_device_v1@26.selection(nil)
+[2619874.995] wl_seat@12.capabilities(3)
+[2619875.035]  -> wl_compositor@5.create_surface(new id wl_surface@37)
+[2619875.088]  -> wl_seat@12.get_pointer(new id wl_pointer@29)
+[2619875.105]  -> zwp_relative_pointer_manager_v1@8.get_relative_pointer(new id zwp_relative_pointer_v1@27, wl_pointer@29)
+[2619875.127]  -> wl_compositor@5.create_surface(new id wl_surface@35)
+[2619875.139]  -> wl_seat@12.get_pointer(new id wl_pointer@43)
+[2619981.180] wl_seat@12.capabilities(2)
+[2619981.214]  -> zwp_relative_pointer_v1@27.destroy()
+[2619981.226]  -> wl_pointer@29.release()
+[2619981.236]  -> wl_surface@37.destroy()
+[2619981.247]  -> wl_pointer@43.release()
+[2619981.254]  -> wl_surface@35.destroy()
+[2619981.262] wl_seat@12.capabilities(0)
+[2619981.285]  -> wl_keyboard@33.release()
+[2619987.316] wl_seat@30.capabilities(2)
+[2619987.336]  -> wl_pointer@36.release()
+[2619987.363] wl_seat@30.capabilities(0)
+[2619987.371]  -> wl_keyboard@34.release()
+[2621932.880] wl_display@1.delete_id(41)
+[2621932.903] wl_display@1.delete_id(40)
+[2621932.910] wl_display@1.delete_id(27)
+[2621932.917] wl_display@1.delete_id(29)
+[2621932.924] wl_display@1.delete_id(37)
+[2621932.930] wl_display@1.delete_id(43)
+[2621932.944] wl_display@1.delete_id(35)
+[2621932.950] wl_display@1.delete_id(33)
+[2621932.959] wl_seat@12.capabilities(2)
+[2621932.976]  -> wl_seat@12.get_keyboard(new id wl_keyboard@33)
+[2621936.875] wl_seat@12.capabilities(3)
+[2621936.893]  -> wl_compositor@5.create_surface(new id wl_surface@35)
+[2621936.931]  -> wl_seat@12.get_pointer(new id wl_pointer@43)
+[2621936.945]  -> zwp_relative_pointer_manager_v1@8.get_relative_pointer(new id zwp_relative_pointer_v1@37, wl_pointer@43)
+[2621936.965]  -> wl_compositor@5.create_surface(new id wl_surface@29)
+[2621936.987]  -> wl_seat@12.get_pointer(new id wl_pointer@27)
+[2621942.796] wl_data_device@25.selection(nil)
+[2621942.817] zwp_primary_selection_device_v1@26.selection(nil)
+[2621942.823] wl_seat@30.capabilities(2)
+---
+ types/wlr_relative_pointer_v1.c | 16 ++++++++++------
+ 1 file changed, 10 insertions(+), 6 deletions(-)
+
+diff --git a/types/wlr_relative_pointer_v1.c b/types/wlr_relative_pointer_v1.c
+index 8613f2b91..0c3d3829f 100644
+--- a/types/wlr_relative_pointer_v1.c
++++ b/types/wlr_relative_pointer_v1.c
+@@ -117,9 +117,17 @@ static void relative_pointer_manager_v1_handle_get_relative_pointer(struct wl_cl
+ 	}
+ 
+ 	relative_pointer->resource = relative_pointer_resource;
+-	relative_pointer->seat = seat_client->seat;
+ 	relative_pointer->pointer_resource = pointer;
+ 
++	if (seat_client) {
++		relative_pointer->seat = seat_client->seat;
++		wl_signal_add(&relative_pointer->seat->events.destroy,
++					  &relative_pointer->seat_destroy);
++		relative_pointer->seat_destroy.notify = relative_pointer_handle_seat_destroy;
++	} else {
++		wl_list_init(&relative_pointer->seat_destroy.link);
++	}
++
+ 	wl_signal_init(&relative_pointer->events.destroy);
+ 
+ 	wl_resource_set_implementation(relative_pointer_resource, &relative_pointer_v1_impl,
+@@ -131,10 +139,6 @@ static void relative_pointer_manager_v1_handle_get_relative_pointer(struct wl_cl
+ 	wl_list_insert(&manager->relative_pointers,
+ 			&relative_pointer->link);
+ 
+-	wl_signal_add(&relative_pointer->seat->events.destroy,
+-			&relative_pointer->seat_destroy);
+-	relative_pointer->seat_destroy.notify = relative_pointer_handle_seat_destroy;
+-
+ 	wl_resource_add_destroy_listener(relative_pointer->pointer_resource,
+ 			&relative_pointer->pointer_destroy);
+ 	relative_pointer->pointer_destroy.notify = relative_pointer_handle_pointer_destroy;
+@@ -230,7 +234,7 @@ void wlr_relative_pointer_manager_v1_send_relative_motion(
+ 	wl_list_for_each(pointer, &manager->relative_pointers, link) {
+ 		struct wlr_seat_client *seat_client =
+ 			wlr_seat_client_from_pointer_resource(pointer->pointer_resource);
+-		if (seat != pointer->seat || focused != seat_client) {
++		if (!pointer->seat || seat != pointer->seat || focused != seat_client) {
+ 			continue;
+ 		}
+ 
+-- 
+GitLab
+
