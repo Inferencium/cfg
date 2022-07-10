@@ -44,7 +44,7 @@ sys-apps/iucode_tool::gentoo
 sys-apps/tcp-wrappers::gentoo
 sys-apps/watchdog::gentoo
 sys-apps/xdg-dbus-proxy::gentoo
-sys-auth/elogind::gentoo
+#sys-auth/elogind::gentoo
 sys-auth/nss-myhostname::gentoo
 sys-auth/polkit::gentoo
 sys-block/partimage::gentoo

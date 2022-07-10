@@ -49,6 +49,7 @@ net-dns/dnsmasq					ipv6
 net-dns/dnsmasq					script
 net-im/profanity				omemo -gpg -otr
 net-libs/nodejs					-lto
+net-misc/chrony					nts -ntp
 sys-auth/polkit					duktape
 sys-block/parted				device-mapper verify-sig
 sys-devel/clang					default-compiler-rt default-lld default-libcxx
