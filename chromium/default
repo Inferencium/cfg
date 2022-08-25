@@ -1,0 +1,1 @@
+CHROMIUM_FLAGS="--enable-features=WebUIDarkMode --force-dark-mode --flag-switches-begin --disable-smooth-scrolling --flag-switches-end"
