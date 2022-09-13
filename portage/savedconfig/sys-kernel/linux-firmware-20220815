@@ -3,6 +3,7 @@
 # Copyright 2022 Inference
 
 
+amd-ucode/microcode_amd_fam15h.bin
 amd-ucode/microcode_amd_fam17h.bin
 amdgpu/raven_asd.bin
 amdgpu/raven_ce.bin
