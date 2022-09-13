@@ -1,6 +1,3 @@
 # Portage package.use.force
 
 # Copyright 2022 Inference
-
-
-www-client/firefox -system-libevent
