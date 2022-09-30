@@ -3,9 +3,9 @@
 # Copyright 2022 Inference
 
 
-*/*				GPL-2
-*/*				GPL-3
-*/*				MIT
-app-arch/unrar			unRAR
+*/*							GPL-2
+*/*							GPL-3
+*/*							MIT
+app-arch/unrar				unRAR
 dev-util/android-studio		android
 sys-kernel/linux-firmware	@BINARY-REDISTRIBUTABLE
