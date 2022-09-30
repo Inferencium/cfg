@@ -7,5 +7,4 @@
 */*							GPL-3
 */*							MIT
 app-arch/unrar				unRAR
-dev-util/android-studio		android
 sys-kernel/linux-firmware	@BINARY-REDISTRIBUTABLE
