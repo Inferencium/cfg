@@ -28,5 +28,4 @@ sys-libs/libexecinfo			~amd64
 sys-libs/libomp					~amd64
 sys-libs/libucontext			~amd64
 virtual/rust					~amd64
-www-client/chromium				~amd64
 www-client/highway				~amd64
