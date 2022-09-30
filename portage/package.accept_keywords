@@ -12,7 +12,6 @@ dev-libs/libstrophe				~amd64
 dev-libs/nss					~amd64
 dev-libs/olm					~amd64
 dev-libs/spdlog					~amd64
-dev-util/android-tools			~amd64
 fs-util/fsverity-utils			~amd64
 games-rpg/cataclysm-dda			~amd64
 gui-apps/waybar					~amd64
