@@ -20,8 +20,8 @@ gui-apps/grim					jpeg
 gui-apps/waybar					mpd network -popups -sndio -tray
 gui-apps/wofi					drun run -dmenu
 gui-libs/wlroots				X
-gui-wm/sway					man swaybg swayidle swaylock swaymsg mwaynag X -swaybar
-kde-frameworks/knotifications			X
+gui-wm/sway						man swaybg swayidle swaylock swaymsg mwaynag X -swaybar
+kde-frameworks/knotifications		X
 kde-frameworks/kwindowsystem			X
 media-fonts/noto				cjk
 media-libs/babl					lcms introspection

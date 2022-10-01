@@ -11,7 +11,7 @@ Security and privacy are the focuses, nothing else.
 <br>
 <br>
 <h2>Licensing</h2>
-<p>All content is licensed under MIT License.</p>
+<p>All content is licensed under BSD 3-Clause Clear License.</p>
 <br>
 <br>
 <h2>Security</h2>
