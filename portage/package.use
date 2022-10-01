@@ -45,6 +45,7 @@ media-libs/mesa						X
 media-libs/mlt						qt5 ffmpeg frei0r xml sdl
 media-libs/opencv					contrib contribdnn
 media-libs/sdl2-image				gif jpeg png tiff webp
+media-libs/sdl2-mixer				flac mp3 opus vorbis wav -fluidsynth -mad -midi -mikmod -mod -modplug -playtools -static-libs -timidity -tremor
 media-plugins/alsa-plugins			pulseaudio
 media-video/ffmpeg					X sdl
 media-video/mpv						cli -xv
