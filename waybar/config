@@ -1,5 +1,10 @@
 // Waybar - Configuration.
 
+// Copyright 2022 Inference
+
+// 0.0.0.1
+
+
 {
 	"layer": "top",
 	"position": "top",
@@ -92,11 +97,10 @@
 	},
 
 	"network": {
+		"interface": "enp37s0",
 		"interval": 1,
-		"format-wifi": " {essid} ({signalStrength}%)", // Icon: wifi
-		//"format-ethernet": " {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
-		"format-ethernet": " {ifname}",
-		"format-disconnected": "",
+		"format-ethernet": " {ifname}: {ipaddr}/{cidr}",
+		"format-disconnected": "  {ifname}",
 		"disable-hover": true,
 		"disable-click": true,
 		"disable-scroll": true,
