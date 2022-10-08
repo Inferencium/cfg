@@ -17,7 +17,7 @@ dev-qt/qtgui						egl eglfs jpeg X
 gui-apps/grim						jpeg
 gui-apps/waybar						mpd network -popups -sndio -tray
 gui-apps/wofi						drun run -dmenu
-gui-wm/sway							man swaybg swayidle swaylock swaymsg X -swaybar
+gui-wm/sway							man swaybg swayidle swaylock swaymsg -swaybar
 media-fonts/noto					cjk
 media-libs/babl						lcms introspection
 media-libs/freeimage				jpeg jpeg2k png raw tiff webp
