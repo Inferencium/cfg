@@ -3,6 +3,8 @@
 # Copyright 2022 Inference
 # License: BSD 3-Clause Clear
 
+# 0.0.0.1
+
 
 # Prompt.
 PROMPT=%n@%M:%#" "
