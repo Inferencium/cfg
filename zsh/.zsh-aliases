@@ -1,0 +1,21 @@
+# ZSH - Aliases
+
+# Copyright 2022 Inference
+# License: BSD 3-Clause Clear
+
+
+# Navigation.
+alias ..='cd ..'
+alias cl='clear'
+alias l='ls -CF --color=auto'
+alias la='ls -A --color=auto'
+alias ll='ls -l --color=auto'
+alias ls='ls -F --color=auto'
+alias tr='tree -C'
+
+# File management.
+alias clp='wl-copy'
+alias cp='cp -i'
+alias md='mkdir'
+alias mv='mv -i'
+alias rm='rm -i'
