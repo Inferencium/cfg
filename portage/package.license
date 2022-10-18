@@ -3,8 +3,10 @@
 # Copyright 2022 Inference
 
 
+*/*							BSD
 */*							GPL-2
 */*							GPL-3
 */*							MIT
 app-arch/unrar				unRAR
+sys-kernel/fortress-kernel	linux-firmware
 sys-kernel/linux-firmware	@BINARY-REDISTRIBUTABLE
