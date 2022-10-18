@@ -23,6 +23,7 @@ net-im/gomuks					~amd64
 net-im/profanity				~amd64
 net-misc/ytfzf					~amd64
 sys-fs/jmtpfs					~amd64
+sys-kernel/fortress-kernel		~amd64
 sys-libs/libexecinfo			~amd64
 sys-libs/libomp					~amd64
 sys-libs/libucontext			~amd64
