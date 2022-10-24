@@ -1,9 +1,11 @@
-# Portage package.accept_keywords
+# Portage - package.accept_keywords
 
 # Copyright 2022 Inference
+# License: BSD 3-Clause Clear
+
+# 0.0.0.0
 
 
-<media-gfx/gimp-3.0.0			**
 app-arch/unrar					~amd64
 dev-libs/date					~amd64
 dev-libs/icu					~amd64
@@ -13,13 +15,12 @@ dev-libs/nss					~amd64
 dev-libs/olm					~amd64
 dev-libs/spdlog					~amd64
 fs-util/fsverity-utils			~amd64
-games-rpg/cataclysm-dda			~amd64
 gui-apps/waybar					~amd64
-gui-apps/wofi					~amd64
+<media-gfx/gimp-3.0.0			**
+media-gfx/ueberzug				~amd64
 media-libs/babl					~amd64
 media-libs/dav1d				~amd64
 media-libs/gegl					~amd64
-net-im/gomuks					~amd64
 net-im/profanity				~amd64
 net-misc/ytfzf					~amd64
 sys-fs/jmtpfs					~amd64
