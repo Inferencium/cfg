@@ -54,5 +54,5 @@ sys-libs/libcxxabi					static-libs
 sys-libs/llvm-libunwind				static-libs
 sys-libs/ncurses					static-libs
 sys-libs/zlib						minizip
-www-client/highway					lto proprietary-codecs system-allocator system-harfbuzz system-icu system-png vaapi -hangouts -js-type-check -libcxx -suid -X
+www-client/traveller				hevc lto pic proprietary-codecs system-allocator system-harfbuzz system-icu system-png vaapi -custom-cflags -hangouts -js-type-check -libcxx -suid -system-ffmpeg
 x11-libs/libdrm						video_cards_radeon
