@@ -19,6 +19,7 @@ gui-apps/waybar						mpd network -popups -sndio -tray
 gui-apps/wofi						drun run -dmenu
 gui-wm/sway							man swaybg swayidle swaylock swaymsg -swaybar
 media-fonts/noto					cjk
+media-gfx/graphicsmagick			png
 media-libs/babl						lcms introspection
 media-libs/freeimage				jpeg jpeg2k png raw tiff webp
 media-libs/gegl						cairo introspection lcms
@@ -54,5 +55,5 @@ sys-libs/libcxxabi					static-libs
 sys-libs/llvm-libunwind				static-libs
 sys-libs/ncurses					static-libs
 sys-libs/zlib						minizip
-www-client/traveller				hevc lto pic proprietary-codecs system-allocator system-harfbuzz system-icu system-png vaapi -custom-cflags -hangouts -js-type-check -libcxx -suid -system-ffmpeg
+www-client/traveller				lto proprietary-codecs system-allocator system-harfbuzz system-icu system-png vaapi -custom-cflags -hangouts -hevc -js-type-check -libcxx -pic -suid -system-ffmpeg
 x11-libs/libdrm						video_cards_radeon
