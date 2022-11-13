@@ -7,7 +7,7 @@ app-admin/keepassxc					autotype yubikey -network
 app-crypt/gcr						gtk
 app-text/poppler					cairo
 app-text/xmlto						text
-dev-lang/rust						verify-sig
+dev-cpp/cairomm						X
 dev-libs/libedit					static-libs
 dev-libs/libpcre					-readline
 dev-libs/libpcre2					-readline
@@ -44,8 +44,8 @@ net-im/profanity					omemo -gpg -otr
 net-libs/nodejs						inspector -lto
 net-misc/chrony						nts -ntp
 sys-auth/polkit						duktape
-sys-block/parted					device-mapper verify-sig
-sys-devel/clang						default-compiler-rt default-lld default-libcxx
+sys-block/parted					device-mapper
+sys-devel/clang-common				default-compiler-rt default-libcxx default-lld
 sys-devel/clang-runtime				libcxx
 sys-fs/cryptsetup					argon2 nls openssl reencrypt udev
 sys-kernel/gentoo-sources			symlink
@@ -56,4 +56,5 @@ sys-libs/llvm-libunwind				static-libs
 sys-libs/ncurses					static-libs
 sys-libs/zlib						minizip
 www-client/traveller				lto proprietary-codecs system-allocator system-harfbuzz system-icu system-png vaapi -custom-cflags -hangouts -hevc -js-type-check -libcxx -pic -suid -system-ffmpeg
+x11-libs/cairo						X
 x11-libs/libdrm						video_cards_radeon
