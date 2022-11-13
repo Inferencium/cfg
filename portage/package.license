@@ -1,12 +1,16 @@
-# Portage package.license
+# Portage - package.license
 
 # Copyright 2022 Inference
+# License: BSD 3-Clause Clear
+
+# 0.0.0.0
 
 
-*/*							BSD
-*/*							GPL-2
-*/*							GPL-3
-*/*							MIT
-app-arch/unrar				unRAR
-sys-kernel/fortress-kernel	linux-firmware
-sys-kernel/linux-firmware	@BINARY-REDISTRIBUTABLE
+*/*								BSD
+*/*								GPL-2
+*/*								GPL-3
+*/*								MIT
+app-arch/unrar					unRAR
+sys-kernel/fortress-kernel		linux-firmware
+sys-kernel/vanilla-sources		linux-firmware
+sys-kernel/linux-firmware		@BINARY-REDISTRIBUTABLE
