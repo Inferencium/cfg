@@ -3,10 +3,11 @@
 # Copyright 2022 Inference
 # License: BSD 3-Clause Clear
 
-# 0.2.0.2
+# 0.3.0.3
 
 
 app-arch/unrar					~amd64
+dev-lang/rust					~amd64
 dev-libs/date					~amd64
 dev-libs/icu					~amd64
 dev-libs/libfmt					~amd64
