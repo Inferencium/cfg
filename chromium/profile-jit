@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Chromium (profile)
+Comment=
+Exec=chromium --user-data-dir=/home/user/.config/chromium/profile
+Terminal=false
+Type=Application
+Icon=chromium
+Categories=Network;
