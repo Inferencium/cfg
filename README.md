@@ -1,5 +1,5 @@
 <h1>Configuration</h1>
-<p>Inference personal configuration files.</p>
+<p>Inference personal configuration files repository.</p>
 <br>
 <br>
 <h2>Licensing</h2>
