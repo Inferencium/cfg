@@ -1,6 +1,9 @@
 # Portage set LLVM toolchain
 
 # Copyright 2022 Inference
+# License: BSD 3-Clause Clear
+
+# 0.0.0.0
 
 
 sys-devel/clang
@@ -13,4 +16,5 @@ sys-libs/compiler-rt
 sys-libs/compiler-rt-sanitizers
 sys-libs/libcxx
 sys-libs/libcxxabi
+sys-libs/libomp
 sys-libs/llvm-libunwind
