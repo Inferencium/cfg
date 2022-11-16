@@ -48,11 +48,15 @@ net-libs/nodejs						inspector -lto
 net-misc/chrony						nts -ntp
 sys-auth/polkit						duktape
 sys-block/parted					device-mapper
-sys-devel/clang-common				default-compiler-rt default-libcxx default-lld
+sys-devel/binutils					cet static-libs
+sys-devel/clang-common				default-compiler-rt default-libcxx default-lld stricter
 sys-devel/clang-runtime				libcxx
+sys-devel/gcc						cet zstd -fortran
+sys-devel/llvm						zstd
 sys-fs/cryptsetup					argon2 nls openssl reencrypt udev
 sys-kernel/linux-firmware			savedconfig
 sys-kernel/vanilla-sources			symlink
+sys-libs/compiler-rt-sanitizers		asan cfi dfsan hwasan libfuzzer lsan memprof msan profile safestack shadowcallstack tsan ubsan xray -scudo
 sys-libs/libcxx						static-libs
 sys-libs/libcxxabi					static-libs
 sys-libs/llvm-libunwind				static-libs
