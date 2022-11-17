@@ -1,4 +1,4 @@
-# Sway Configuration File
+# Sway - Configuration
 
 # Copyright 2022 Inference
 # License: BSD 3-Clause Clear
@@ -15,11 +15,11 @@ bindsym $mod+Shift+c reload
 # Restart Sway.
 bindsym $mod+Shift+r restart
 
-# Exit Sway (log out of Wayland session).
+# Exit Sway (exit Wayland session).
 bindsym $mod+Shift+e exec swaynag -t warning -m 'Exit Sway?' -b 'Yes' 'swaymsg exit'
 
 # Start terminal.
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec $TERM
 
 # Kill focused window.
 bindsym $mod+Shift+q kill
