@@ -177,12 +177,6 @@ client.background       #ffffff
 
 # Open specific software on specific workspaces.
 #assign [class="KeePassXC"] $ws2
-#assign [class="Signal"] $ws3
-#assign [class="Wire"] $ws3
-#assign [class="Element"] $ws3
-#assign [class="Session"] $ws3
-#assign [class="VSCodium"] $ws4
-#assign [class="FreeTube"] $ws5
 
 
 # External software.
