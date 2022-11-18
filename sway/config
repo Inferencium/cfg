@@ -168,11 +168,11 @@ font pango:monospace 9
 
 # Colors.
 ## Class                Border  Backgr  Text    Indicator Child_border
-client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #c79500 #000000 #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.focused          #585858 #585858 #ffffff #2e9ef4   #285577
+client.focused_inactive #5f677a #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #222222 #222222 #888888 #292d2e   #222222
+client.urgent           #c79500 #c79500 #000000 #900000   #900000
+client.placeholder      #0c0c0c #0c0c0c #ffffff #000000   #0c0c0c
 client.background       #ffffff
 
 # Open specific software on specific workspaces.
