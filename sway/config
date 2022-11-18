@@ -3,7 +3,7 @@
 # Copyright 2022 Inference
 # License: BSD 3-Clause Clear
 
-# 0.0.0.0
+# 0.0.1.1
 
 
 # Set Mod key.
@@ -19,7 +19,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec swaynag -t warning -m 'Exit Sway?' -b 'Yes' 'swaymsg exit'
 
 # Start terminal.
-bindsym $mod+Return exec $TERM
+bindsym $mod+Return exec alacritty
 
 # Kill focused window.
 bindsym $mod+Shift+q kill
