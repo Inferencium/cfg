@@ -3,7 +3,7 @@
 # Copyright 2022 Inference
 # License: BSD 3-Clause Clear
 
-# 0.5.0.5
+# 0.6.0.6
 
 
 app-arch/unrar						~amd64
@@ -24,6 +24,7 @@ media-libs/dav1d					~amd64
 media-libs/gegl						~amd64
 net-im/profanity					~amd64
 net-misc/ytfzf						~amd64
+sys-auth/elogind					~amd64
 sys-devel/clang						~amd64
 sys-devel/clang-common				~amd64
 sys-devel/clang-runtime				~amd64
