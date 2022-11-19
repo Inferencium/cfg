@@ -3,7 +3,7 @@
 # Copyright 2022 Inference
 # License: BSD 3-Clause Clear
 
-# 0.7.0.7
+# 0.8.0.8
 
 
 app-arch/unrar						~amd64
@@ -17,7 +17,6 @@ dev-libs/spdlog						~amd64
 fs-util/fsverity-utils				~amd64
 gui-apps/waybar						~amd64
 <media-gfx/gimp-3.0.0				**
-media-gfx/ueberzug					~amd64
 media-libs/babl						~amd64
 media-libs/dav1d					~amd64
 media-libs/gegl						~amd64
