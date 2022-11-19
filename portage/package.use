@@ -3,7 +3,7 @@
 # Copyright 2022 Inference
 # License: BSD 3-Clause Clear
 
-# 0.1.0.1
+# 0.2.0.2
 
 
 app-admin/keepassxc					autotype yubikey -network
@@ -19,7 +19,6 @@ dev-qt/qtcore						icu
 dev-qt/qtgui						egl eglfs jpeg X
 gui-apps/grim						jpeg
 gui-apps/waybar						mpd network -popups -sndio -tray
-gui-apps/wofi						drun run -dmenu
 gui-wm/sway							man swaybg swayidle swaylock swaymsg -swaybar
 media-fonts/noto					cjk
 media-gfx/graphicsmagick			png
