@@ -3,7 +3,7 @@
 # Copyright 2022 Inference
 # License: BSD 3-Clause Clear
 
-# 0.6.0.6
+# 0.7.0.7
 
 
 app-arch/unrar						~amd64
@@ -13,7 +13,6 @@ dev-libs/icu						~amd64
 dev-libs/libfmt						~amd64
 dev-libs/libstrophe					~amd64
 dev-libs/nss						~amd64
-dev-libs/olm						~amd64
 dev-libs/spdlog						~amd64
 fs-util/fsverity-utils				~amd64
 gui-apps/waybar						~amd64
@@ -39,7 +38,6 @@ sys-libs/compiler-rt				~amd64
 sys-libs/compiler-rt-sanitizers		~amd64
 sys-libs/libcxx						~amd64
 sys-libs/libcxxabi					~amd64
-sys-libs/libexecinfo				~amd64
 sys-libs/libomp						~amd64
 sys-libs/libucontext				~amd64
 sys-libs/llvm-libunwind				~amd64
