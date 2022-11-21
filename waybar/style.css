@@ -1,5 +1,12 @@
+/* Waybar - Styling */
+
+/* Copyright 2022 Inference */
+/* License: BSD 3-Clause Clear */
+
+/* 0.0.0.0 */
+
+
 * {
-	/* `otf-font-awesome` is required to be installed for icons */
 	font-family: Terminus;
 	font-size: 14px;
 }
@@ -20,9 +27,6 @@ window#waybar {
 	padding: 0 12px;
 	background-color: #000000;
 	color: #bcbcbc;
-	/* Use box-shadow instead of border so the text isn't offset */
-	/*box-shadow: inset 0 -3px transparent;*/
-	/* Avoid rounded borders under each workspace name */
 	border: none;
 	border-radius: 0;
 }
