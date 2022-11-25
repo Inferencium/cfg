@@ -1,0 +1,12 @@
+# Portage - Set - Rust
+
+# Copyright 2022 Inference
+# License: BSD 3-Clause Clear
+
+# 0.0.0.0
+
+
+# Packages which are written in Rust and are compiled via rustc.
+# These packages should be recompiled after each Rust update/change.
+sys-process/bottom
+x11-terms/alacritty
