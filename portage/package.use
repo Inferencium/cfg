@@ -3,7 +3,7 @@
 # Copyright 2022 Inference
 # License: BSD 3-Clause Clear
 
-# 0.2.0.2
+# 0.3.0.3
 
 
 app-admin/keepassxc					autotype yubikey -network
@@ -17,6 +17,7 @@ dev-libs/libpcre2					-readline
 dev-libs/libxml2					icu
 dev-qt/qtcore						icu
 dev-qt/qtgui						egl eglfs jpeg X
+dev-util/android-tools				udev
 gui-apps/grim						jpeg
 gui-apps/waybar						mpd network -popups -sndio -tray
 gui-wm/sway							man swaybg swayidle swaylock swaymsg -swaybar
