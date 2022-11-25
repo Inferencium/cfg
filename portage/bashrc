@@ -1,6 +1,9 @@
-# Portage bashrc
+# Portage - bashrc
 
 # Copyright 2022 Inference
+# License: BSD 3-Clause Clear
+
+# 0.0.0.0
 
 
 # This hook is necessary for automatic updating of the cfg-update index.
