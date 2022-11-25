@@ -6,6 +6,7 @@
 # 0.0.0.0
 
 
+# Global.
 ## Chromium is masked by default on musl; it has been made to work on musl via
 ## patches.
 www-client/chromium
