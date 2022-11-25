@@ -1,12 +1,22 @@
-# Portage package.mask
+# Portage - package.mask
 
 # Copyright 2022 Inference
+# License: BSD 3-Clause Clear
+
+# 0.0.0.0
 
 
 # Global.
 #*/*x11*
 #*/*xorg*
+## sudo is a security risk due to overly complex configuration;
+## doas is a superior alternative with simple configuration.
 app-admin/sudo
+## Hikari frequently loses connection to Wayland server and kills open
+## processes.
 gui-wm/hikari
+## llvm-libunwind is an optimised alternative to libunwind.
 sys-libs/libunwind
+## Firefox is insecure due to sandbox and cross-site leaks;
+## Chromium is a superior alternative with strong security.
 www-client/firefox
