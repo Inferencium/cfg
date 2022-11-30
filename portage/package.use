@@ -3,10 +3,10 @@
 # Copyright 2022 Inference
 # License: BSD 3-Clause Clear
 
-# 0.3.0.3
+# 0.5.0.5
 
 
-app-admin/keepassxc					autotype yubikey -network
+app-admin/keepassxc					yubikey -network
 app-crypt/gcr						gtk
 app-text/poppler					cairo
 app-text/xmlto						text
@@ -14,6 +14,7 @@ dev-cpp/cairomm						X
 dev-libs/libedit					static-libs
 dev-libs/libpcre					-readline
 dev-libs/libpcre2					-readline
+dev-libs/libusb						udev
 dev-libs/libxml2					icu
 dev-qt/qtcore						icu
 dev-qt/qtgui						egl eglfs jpeg X
