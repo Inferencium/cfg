@@ -3,7 +3,7 @@
 # Copyright 2022 Inference
 # License: BSD 3-Clause Clear
 
-# 1.0.0.4
+# 1.1.0.5
 
 
 # Prompt.
@@ -38,6 +38,11 @@ if test -z "${XDG_RUNTIME_DIR}"; then
 fi
 
 # Aliases.
+## Global.
 if [[ -f ~/.zsh-alias-global ]]; then
     . ~/.zsh-alias-global
+fi
+## User.
+if [[ -f ~/.zsh-alias-user ]]; then
+    . ~/.zsh-alias-user
 fi
