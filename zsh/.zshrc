@@ -1,9 +1,9 @@
 # ZSH - rc
 
-# Copyright 2022 Inference
-# License: BSD 3-Clause Clear
+# Copyright 2022-2023 Inference
+# SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# 1.1.0.5
+# Version: 1.1.1.6
 
 
 # Prompt.
