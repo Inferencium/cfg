@@ -3,9 +3,9 @@
 <br>
 <br>
 <h2>Licensing</h2>
-<p>All content is licensed under BSD 3-Clause Clear license\*<br>
+<p>All content is licensed under BSD 3-Clause Clear license&#42;<br>
 <br>
-\*Excluding Linux configuration file(s), which are licensed under GPLv2-only license.</p>
+&#42;Excluding Linux configuration file(s), which are licensed under GPLv2-only license.</p>
 <br>
 <br>
 <h2>Security</h2>
