@@ -1,7 +1,11 @@
---[[
-mpv 5-bands equalizer with visual feedback.
-Copyright 2016 Avi Halachmi ( https://github.com/avih )
-License: public domain
+-- MPV - Script - Equalizer
+
+-- Copyright 2022-2023 Inference
+-- SPDX-License-Identifier: BSD-3-Clause-Clear
+
+-- Version: 0.0.0.0
+
+
 Default config:
 - Enter/exit equilizer keys mode: ctrl+e
 - Equalizer keys: 2/w control bass ... 6/y control treble, and middles in between
@@ -9,6 +13,8 @@ Default config:
 - Reset equalizer values: alt+ctrl+e
 - See ffmpeg filter description below the config section
 --]]
+
+
 -- ------ config -------
 local start_keys_enabled = false  -- if true then choose the up/down keys wisely
 local key_toggle_bindings = 'ctrl+e'  -- enable/disable equalizer key bindings
