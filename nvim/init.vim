@@ -1,9 +1,9 @@
-# Neovim - Configuration
+" Neovim - Configuration
 
-# Copyright 2022-2023 Inference
-# SPDX-License-Identifier: BSD 3-Clause-Clear
+" Copyright 2022-2023 Inference
+" SPDX-License-Identifier: BSD 3-Clause-Clear
 
-# Version: 0.0.0.0
+" Version: 0.0.0.0
 
 
 set number
