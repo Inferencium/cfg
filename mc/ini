@@ -1,3 +1,11 @@
+// Midnight Commander - Configuration
+
+// Copyright 2022-2023 Inference
+// SPDX-License-Identifier: BSD-3-Clause-Clear
+
+// Version: 0.0.0.0
+
+
 [Midnight-Commander]
 verbose=true
 shell_patterns=true
