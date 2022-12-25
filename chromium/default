@@ -3,7 +3,7 @@
 // Copyright 2022-2023 Inference
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 
-// Version: 0.0.0.0
+// Version: 1.0.0.1
 
 
-CHROMIUM_FLAGS="--enable-features=WebUIDarkMode --force-dark-mode --flag-switches-begin --js-flags=--jitless --disable-smooth-scrolling --flag-switches-end"
+CHROMIUM_FLAGS="--enable-features=WebUIDarkMode --force-dark-mode --flag-switches-begin --disable-smooth-scrolling --flag-switches-end"
