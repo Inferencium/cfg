@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
+# Waybar - Script - cmus
 
-# Copyright 2021 Inference
+# Copyright 2021-2023 Inference
+# SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# 1.0.0.1
+# Version: 1.0.1.2
 
 
 #prepend_zero () {
