@@ -3,7 +3,7 @@
 # Copyright 2022 Inference
 # License: BSD 3-Clause Clear
 
-# 0.9.0.9
+# 0.12.0.12
 
 
 app-arch/unrar						~amd64
@@ -14,8 +14,11 @@ dev-libs/libfmt						~amd64
 dev-libs/libstrophe					~amd64
 dev-libs/nss						~amd64
 dev-libs/spdlog						~amd64
+dev-python/pygame_sdl2				~amd64
 fs-util/fsverity-utils				~amd64
+games-engines/renpy					~amd64
 gui-apps/waybar						~amd64
+gui-wm/sway							~amd64
 <media-gfx/gimp-3.0.0				**
 media-libs/babl						~amd64
 media-libs/dav1d					~amd64
@@ -32,6 +35,7 @@ sys-devel/llvm						~amd64
 sys-devel/llvm-common				~amd64
 sys-fs/jmtpfs						~amd64
 sys-kernel/fortress-kernel			~amd64
+sys-kernel/inf-kernel				~amd64
 sys-kernel/linux-firmware			~amd64
 sys-kernel/vanilla-sources			~amd64
 sys-libs/compiler-rt				~amd64
