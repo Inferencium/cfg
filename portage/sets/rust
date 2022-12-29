@@ -1,12 +1,12 @@
 # Portage - Set - Rust
 
-# Copyright 2022 Inference
-# License: BSD 3-Clause Clear
+# Copyright 2022-2023 Inference
+# SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# 0.0.0.0
+# Version: 0.0.1.1
 
 
-# Packages which are written in Rust and are compiled via rustc.
-# These packages should be recompiled after each Rust update/change.
+# Packages which are written in Rust and are compiled via rustc. These packages should be recompiled
+# after each Rust update/change.
 sys-process/bottom
 x11-terms/alacritty
