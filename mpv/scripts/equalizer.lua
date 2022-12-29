@@ -3,9 +3,10 @@
 -- Copyright 2022-2023 Inference
 -- SPDX-License-Identifier: BSD-3-Clause-Clear
 
--- Version: 0.0.0.0
+-- Version: 0.0.1.1
 
 
+--[[
 Default config:
 - Enter/exit equilizer keys mode: ctrl+e
 - Equalizer keys: 2/w control bass ... 6/y control treble, and middles in between
