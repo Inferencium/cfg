@@ -3,7 +3,7 @@
 # Copyright 2022-2023 Inference
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# 0.6.1.7
+# 0.7.0.8
 
 
 app-admin/keepassxc					yubikey -network
@@ -31,7 +31,7 @@ media-libs/harfbuzz					icu glib introspection truetype
 media-libs/imlib2					X
 media-libs/libepoxy					X
 media-libs/libglvnd					X
-media-libs/libpng					-apng
+media-libs/libpng					apng
 media-libs/libpulse					X
 media-libs/libraw					jpeg
 media-libs/libsdl2					gles2 opengl X
