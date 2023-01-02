@@ -3,7 +3,7 @@
 # Copyright 2022-2023 Inference
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# 3.1.0.12
+# 4.0.0.13
 
 
 app-admin/keepassxc					-network yubikey
@@ -14,10 +14,15 @@ dev-cpp/cairomm						X
 dev-libs/libedit					static-libs
 dev-libs/libpcre					-readline
 dev-libs/libpcre2					-readline
+dev-libs/libsodium					-verify-sig
 dev-libs/libusb						udev
 dev-libs/libxml2					icu
+dev-python/PyQt5					svg gui widgets webchannel printsupport network
 dev-qt/qtcore						icu
 dev-qt/qtgui						egl eglfs jpeg X
+dev-qt/qtmultimedia					widgets
+dev-qt/qtwebchannel					qml
+dev-qt/qtwebengine					widgets
 dev-util/android-tools				udev
 gui-apps/grim						jpeg
 gui-apps/waybar						-popups -sndio -tray mpd network
@@ -41,11 +46,12 @@ media-libs/opencv					contrib contribdnn
 media-libs/sdl2-image				gif jpeg png tiff webp
 media-libs/sdl2-mixer				-fluidsynth -mad -midi -mikmod -mod -modplug -playtools -static-libs -timidity -tremor flac mp3 opus vorbis wav
 media-plugins/alsa-plugins			pulseaudio
-media-video/ffmpeg					sdl X
+media-video/ffmpeg					mp3 sdl theora vorbis vpx X x264 xvid
 media-video/mpv						-xv cli
 net-dns/dnsmasq						ipv6 script
 net-im/profanity					-gpg -otr omemo
 net-libs/nodejs						-lto inspector
+net-libs/zeromq						drafts
 net-misc/chrony						nts -ntp
 sys-auth/polkit						duktape
 sys-auth/seatd						server
