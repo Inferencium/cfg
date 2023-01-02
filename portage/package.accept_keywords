@@ -3,7 +3,7 @@
 # Copyright 2022-2023 Inference
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 2.1.0.18
+# Version: 3.0.0.19
 
 
 app-arch/unrar						~amd64
@@ -19,7 +19,7 @@ fs-util/fsverity-utils				~amd64
 gui-apps/waybar						~amd64
 gui-libs/wlroots					~amd64
 gui-wm/sway							~amd64
-<media-gfx/gimp-3.0.0				**
+media-gfx/gimp						~amd64
 media-libs/babl						~amd64
 media-libs/dav1d					~amd64
 media-libs/gegl						~amd64
@@ -46,4 +46,3 @@ sys-libs/libucontext				~amd64
 sys-libs/llvm-libunwind				~amd64
 virtual/rust						~amd64
 www-client/librewolf				~amd64
-www-client/traveller				~amd64
