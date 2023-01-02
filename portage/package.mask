@@ -3,7 +3,7 @@
 # Copyright 2022-2023 Inference
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# 0.0.1.1
+# 1.0.0.2
 
 
 # Global.
@@ -16,6 +16,8 @@ app-admin/sudo
 gui-wm/hikari
 ## llvm-libunwind is an LLVM-optimised alternative to libunwind.
 sys-libs/libunwind
-## Firefox is insecure due to sandbox and cross-site leaks; Chromium is a superior alternative with
-## strong security.
+## Chromium is incompatible with musl, and patches to make it compatible are unmaintainable.
+www-client/chromium
+## Firefox includes unnecessary features for a web browser, and its practices are questionable;
+## LibreWolf is a minimal alternative which strips these features.
 www-client/firefox
