@@ -3,7 +3,7 @@
 # Copyright 2022-2023 Inference
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# 0.7.0.8
+# 1.0.0.9
 
 
 app-admin/keepassxc					yubikey -network
@@ -57,15 +57,12 @@ sys-devel/gcc						cet zstd -fortran
 sys-devel/llvm						zstd
 sys-fs/cryptsetup					argon2 nls openssl reencrypt udev
 sys-kernel/inf-kernel				symlink
-sys-kernel/linux-firmware			savedconfig
-sys-kernel/vanilla-sources			symlink
 sys-libs/compiler-rt-sanitizers		asan cfi dfsan hwasan libfuzzer lsan memprof msan profile safestack shadowcallstack tsan ubsan xray -scudo
 sys-libs/libcxx						static-libs
 sys-libs/libcxxabi					static-libs
 sys-libs/llvm-libunwind				static-libs
 sys-libs/ncurses					static-libs
 sys-libs/zlib						minizip
-www-client/traveller				lto proprietary-codecs system-allocator system-harfbuzz system-icu system-png vaapi -custom-cflags -hangouts -hevc -js-type-check -libcxx -pic -suid -system-ffmpeg
 x11-libs/cairo						X
 x11-libs/libdrm						video_cards_radeon
 x11-libs/pango						X
