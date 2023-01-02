@@ -3,10 +3,10 @@
 # Copyright 2022-2023 Inference
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# 1.0.0.2
+# 2.0.0.3
 
 
-# Global.
+# Global
 #*/*x11*
 #*/*xorg*
 ## sudo is a security risk due to overly complex configuration; doas is a superior alternative with
@@ -21,3 +21,14 @@ www-client/chromium
 ## Firefox includes unnecessary features for a web browser, and its practices are questionable;
 ## LibreWolf is a minimal alternative which strips these features.
 www-client/firefox
+
+# Gentoo
+## Gentoo kernels are often behind with updates for lengthy periods of time; this is unacceptable
+## for high-security systems.
+sys-kernel/*-kernel::gentoo
+sys-kernel/*-kernel-bin::gentoo
+sys-kernel/*-sources::gentoo
+## Downloading entire linux-firmware package when only a small amount of firmware files are required
+## is a waste of bandwidth; switched to in-house linux-firmware package which contains only required
+## firmware files.
+sys-kernel/linux-firmware::gentoo
