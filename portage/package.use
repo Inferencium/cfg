@@ -3,7 +3,7 @@
 # Copyright 2022-2023 Inference
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# 1.0.0.9
+# 2.0.0.10
 
 
 app-admin/keepassxc					yubikey -network
@@ -63,6 +63,7 @@ sys-libs/libcxxabi					static-libs
 sys-libs/llvm-libunwind				static-libs
 sys-libs/ncurses					static-libs
 sys-libs/zlib						minizip
+www-client/librewolf				eme-free
 x11-libs/cairo						X
 x11-libs/libdrm						video_cards_radeon
 x11-libs/pango						X
