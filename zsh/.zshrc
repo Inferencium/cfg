@@ -3,8 +3,10 @@
 # Copyright 2022-2023 Inference
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 1.1.1.6
+# Version: 1.2.0.7
 
+
+export LD_PRELOAD="/lib/local/libhardened_malloc.so"
 
 # Prompt.
 PROMPT=%n@%M:%#" "
