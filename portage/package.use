@@ -3,10 +3,10 @@
 # Copyright 2022-2023 Inference
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# 2.0.0.10
+# 3.0.0.11
 
 
-app-admin/keepassxc					yubikey -network
+app-admin/keepassxc					-network yubikey
 app-crypt/gcr						gtk
 app-text/poppler					cairo
 app-text/xmlto						text
@@ -20,8 +20,8 @@ dev-qt/qtcore						icu
 dev-qt/qtgui						egl eglfs jpeg X
 dev-util/android-tools				udev
 gui-apps/grim						jpeg
-gui-apps/waybar						mpd network -popups -sndio -tray
-gui-wm/sway							man swaybg swayidle swaylock swaymsg -swaybar
+gui-apps/waybar						-popups -sndio -tray mpd network
+gui-wm/sway							-swaybar man swaybg swayidle swaylock swaymsg
 media-fonts/noto					cjk
 media-gfx/graphicsmagick			png
 media-libs/babl						lcms introspection
@@ -39,13 +39,13 @@ media-libs/libvpx					postproc
 media-libs/mesa						X
 media-libs/opencv					contrib contribdnn
 media-libs/sdl2-image				gif jpeg png tiff webp
-media-libs/sdl2-mixer				flac mp3 opus vorbis wav -fluidsynth -mad -midi -mikmod -mod -modplug -playtools -static-libs -timidity -tremor
+media-libs/sdl2-mixer				-fluidsynth -mad -midi -mikmod -mod -modplug -playtools -static-libs -timidity -tremor flac mp3 opus vorbis wav
 media-plugins/alsa-plugins			pulseaudio
 media-video/ffmpeg					sdl X
-media-video/mpv						cli -xv
+media-video/mpv						-xv cli
 net-dns/dnsmasq						ipv6 script
-net-im/profanity					omemo -gpg -otr
-net-libs/nodejs						inspector -lto
+net-im/profanity					-gpg -otr omemo
+net-libs/nodejs						-lto inspector
 net-misc/chrony						nts -ntp
 sys-auth/polkit						duktape
 sys-auth/seatd						server
@@ -53,17 +53,17 @@ sys-block/parted					device-mapper
 sys-devel/binutils					cet static-libs
 sys-devel/clang-common				default-compiler-rt default-libcxx default-lld stricter
 sys-devel/clang-runtime				libcxx
-sys-devel/gcc						cet zstd -fortran
+sys-devel/gcc						-fortran cet zstd
 sys-devel/llvm						zstd
 sys-fs/cryptsetup					argon2 nls openssl reencrypt udev
 sys-kernel/inf-kernel				symlink
-sys-libs/compiler-rt-sanitizers		asan cfi dfsan hwasan libfuzzer lsan memprof msan profile safestack shadowcallstack tsan ubsan xray -scudo
+sys-libs/compiler-rt-sanitizers		-scudo asan cfi dfsan hwasan libfuzzer lsan memprof msan profile safestack shadowcallstack tsan ubsan xray
 sys-libs/libcxx						static-libs
 sys-libs/libcxxabi					static-libs
 sys-libs/llvm-libunwind				static-libs
 sys-libs/ncurses					static-libs
 sys-libs/zlib						minizip
-www-client/librewolf				eme-free
+www-client/librewolf				-dbus eme-free
 x11-libs/cairo						X
 x11-libs/libdrm						video_cards_radeon
 x11-libs/pango						X
