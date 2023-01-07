@@ -3,7 +3,7 @@
 # Copyright 2022-2023 Inference
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 1.2.0.7
+# Version: 2.0.0.8
 
 
 export LD_PRELOAD="/lib/local/libhardened_malloc.so"
@@ -17,6 +17,9 @@ unsetopt autocd AUTO_REMOVE_SLASH beep
 
 # Keybinds.
 bindkey -e
+bindkey "^[[3" delete-char
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line
 
 # zstyle.
 zstyle :compinstall filename '~/.zshrc'
