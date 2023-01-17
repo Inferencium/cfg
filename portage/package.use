@@ -3,7 +3,7 @@
 # Copyright 2022-2023 Inference
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# 5.2.0.16
+# 6.0.0.17
 
 
 app-admin/keepassxc					-network yubikey
@@ -59,12 +59,12 @@ sys-apps/file						zstd
 sys-block/parted					device-mapper
 sys-devel/binutils					cet static-libs
 sys-devel/clang-common				default-compiler-rt default-libcxx default-lld stricter
-sys-devel/clang-runtime				libcxx
+sys-devel/clang-runtime				-sanitize libcxx
 sys-devel/gcc						-fortran cet zstd
 sys-devel/llvm						zstd
 sys-fs/cryptsetup					argon2 nls openssl reencrypt udev
 sys-kernel/inf-kernel				symlink
-sys-libs/compiler-rt-sanitizers		-scudo asan cfi dfsan hwasan libfuzzer lsan memprof msan profile safestack shadowcallstack tsan ubsan xray
+sys-libs/compiler-rt-sanitizers		-asan -cfi -dfsan -hwasan -libfuzzer -lsan -memprof -msan -profile -safestack -scudo -shadowcallstack -tsan -ubsan -xray
 sys-libs/libcxx						static-libs
 sys-libs/libcxxabi					static-libs
 sys-libs/llvm-libunwind				static-libs
