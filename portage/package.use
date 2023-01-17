@@ -3,7 +3,7 @@
 # Copyright 2022-2023 Inference
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# 6.0.0.17
+# 7.0.0.18
 
 
 app-admin/keepassxc					-network yubikey
@@ -26,7 +26,8 @@ dev-qt/qtwebengine					widgets
 dev-util/android-tools				udev
 gui-apps/grim						jpeg
 gui-apps/waybar						-popups -sndio -tray mpd network
-gui-wm/sway							-swaybar man swaybg swayidle swaylock swaymsg
+gui-libs/wlroots					X
+gui-wm/sway							-swaybar man swaybg swayidle swaylock swaymsg X
 media-fonts/noto					cjk
 media-gfx/graphicsmagick			png
 media-libs/babl						lcms introspection
@@ -57,10 +58,10 @@ sys-auth/polkit						duktape
 sys-auth/seatd						server
 sys-apps/file						zstd
 sys-block/parted					device-mapper
-sys-devel/binutils					cet static-libs
+sys-devel/binutils					-cet static-libs
 sys-devel/clang-common				default-compiler-rt default-libcxx default-lld stricter
 sys-devel/clang-runtime				-sanitize libcxx
-sys-devel/gcc						-fortran cet zstd
+sys-devel/gcc						-cet -fortran zstd
 sys-devel/llvm						zstd
 sys-fs/cryptsetup					argon2 nls openssl reencrypt udev
 sys-kernel/inf-kernel				symlink
