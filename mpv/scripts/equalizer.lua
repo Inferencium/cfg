@@ -1,9 +1,9 @@
 -- MPV - Script - Equalizer
 
 -- Copyright 2022-2023 Inference
--- SPDX-License-Identifier: BSD-3-Clause-Clear
+-- SPDX-License-Identifier: GPL-3.0-or-later
 
--- Version: 0.0.1.1
+-- Version: 1.0.0.2
 
 
 --[[
