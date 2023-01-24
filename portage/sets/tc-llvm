@@ -1,0 +1,21 @@
+# Inferencium
+# Portage - Set - Toolchain - LLVM
+
+# Copyright 2022-2023 Inference
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+# Version: 1.0.0.3
+
+
+sys-devel/clang
+sys-devel/clang-common
+sys-devel/clang-runtime
+sys-devel/lld
+sys-devel/llvm
+sys-devel/llvm-common
+sys-libs/compiler-rt
+sys-libs/compiler-rt-sanitizers
+sys-libs/libcxx
+sys-libs/libcxxabi
+sys-libs/libomp
+sys-libs/llvm-libunwind

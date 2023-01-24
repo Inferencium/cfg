@@ -1,0 +1,13 @@
+# Inferencium
+# Portage - Set - Rust
+
+# Copyright 2022-2023 Inference
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+# Version: 1.0.0.2
+
+
+# Packages which are written in Rust and are compiled via rustc. These packages should be recompiled
+# after each Rust update/change.
+sys-process/bottom
+x11-terms/alacritty
