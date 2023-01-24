@@ -1,9 +1,9 @@
 " Neovim - Configuration
 
 " Copyright 2022-2023 Inference
-" SPDX-License-Identifier: BSD 3-Clause-Clear
+" SPDX-License-Identifier: GPL-3.0-or-later
 
-" Version: 0.1.1.4
+" Version: 1.0.0.5
 
 
 " Editor.
