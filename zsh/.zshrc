@@ -1,12 +1,11 @@
+# Inferencium
 # ZSH - rc
 
 # Copyright 2022-2023 Inference
-# SPDX-License-Identifier: BSD-3-Clause-Clear
+# SPDX-License-Identifier: GPL-3.0-or-later
 
-# Version: 2.0.0.8
+# Version: 4.0.0.10
 
-
-export LD_PRELOAD="/lib/local/libhardened_malloc.so"
 
 # Prompt.
 PROMPT=%n@%M:%#" "
