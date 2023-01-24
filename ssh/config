@@ -1,3 +1,12 @@
+# Inferencium
+# SSH - Configuration
+
+# Copyright 2022-2023 Inference
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+# Version: 0.0.0.0
+
+
 Host inferencium 167.235.15.201
 		HostName 167.235.15.201
 		User a00-sys
@@ -6,4 +15,4 @@ Host inferencium 167.235.15.201
 Host inferencium-git git.inferencium.net
 		HostName git.inferencium.net
 		User git
-		IdentityFile ~/.ssh/ssh-inf-a00-sys-ed25519
+		IdentityFile /home/a00-sys/.ssh/ssh-inf-a00-sys-ed25519
