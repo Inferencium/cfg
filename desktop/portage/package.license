@@ -1,0 +1,16 @@
+# Inferencium
+# Portage - package.license
+
+# Copyright 2022-2023 Inference
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+# Version: 2.0.0.4
+
+
+*/*										BSD
+*/*										GPL-2
+*/*										GPL-3
+*/*										MIT
+app-arch/unrar							unRAR
+sys-kernel/inf-kernel					linux-firmware
+sys-kernel/linux-firmware-desktop		@BINARY-REDISTRIBUTABLE

@@ -1,0 +1,46 @@
+# Inferencium
+# Portage - package.accept_keywords
+
+# Copyright 2022-2023 Inference
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+# Version: 7.0.0.23
+
+
+app-arch/unrar							~amd64
+dev-lang/rust							~amd64
+dev-libs/date							~amd64
+dev-libs/icu							~amd64
+dev-libs/libfmt							~amd64
+dev-libs/libstrophe						~amd64
+dev-libs/nss							~amd64
+dev-libs/spdlog							~amd64
+dev-libs/wayland-protocols				~amd64
+fs-util/fsverity-utils					~amd64
+gui-apps/waybar							~amd64
+=gui-wm/sway-1.7						~amd64
+<media-gfx/gimp-3.0.0					**
+media-libs/babl							~amd64
+media-libs/dav1d						~amd64
+media-libs/gegl							~amd64
+net-im/profanity						~amd64
+net-misc/ytfzf							~amd64
+sys-auth/elogind						~amd64
+sys-devel/clang							~amd64
+sys-devel/clang-common					~amd64
+sys-devel/clang-runtime					~amd64
+=sys-devel/gcc-12.2.0					~amd64
+sys-devel/lld							~amd64
+sys-devel/llvm							~amd64
+sys-devel/llvm-common					~amd64
+sys-fs/jmtpfs							~amd64
+sys-kernel/inf-kernel					~amd64
+sys-kernel/linux-firmware-desktop		~amd64
+sys-libs/compiler-rt					~amd64
+sys-libs/compiler-rt-sanitizers			~amd64
+sys-libs/libcxx							~amd64
+sys-libs/libcxxabi						~amd64
+sys-libs/libomp							~amd64
+sys-libs/libucontext					~amd64
+virtual/rust							~amd64
+www-client/librewolf					~amd64
