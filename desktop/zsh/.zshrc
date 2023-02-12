@@ -4,8 +4,10 @@
 # Copyright 2022-2023 Inference
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-# Version: 4.0.0.10
+# Version: 5.0.0.11
 
+
+export LD_PRELOAD="/usr/local/lib/libhardened_malloc.so"
 
 # Prompt.
 PROMPT=%n@%M:%#" "
