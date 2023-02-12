@@ -4,14 +4,15 @@
 # Copyright 2022-2023 Inference
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-# Version: 2.0.0.2
+# Version: 2.0.1.3
 
 
 Host inferencium-prv xa000.inferencium.net
+		HostName xa000.inferencium.net
 		User root
 
 Host inferencium-pub xb000.inferencium.net
-		HostName xb000@inferencium.net
+		HostName xb000.inferencium.net
 		User root
 
 Host inferencium-pub-git git.inferencium.net
