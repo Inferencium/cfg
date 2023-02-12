@@ -1,5 +1,5 @@
 <h1>Configuration</h1>
-<p>Inference personal configuration files.</p>
+<p>Inferencium configuration files.</p>
 <br>
 <br>
 <h2>Licensing</h2>
@@ -12,7 +12,7 @@
 <p>All files are checked for security issues; however, it is always the user's responsibility to
 audit the code before installing and/or executing it.<br>
 <br>
-The maintainers take no responsibility for any security issues which may arise due to usage of this
+Inferencium takes no responsibility for any security issues which may arise due to usage of this
 repository.</p>
 <br>
 <br>
