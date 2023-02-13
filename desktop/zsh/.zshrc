@@ -1,7 +1,7 @@
 # Inferencium
 # ZSH - rc
 
-# Copyright 2022-2023 Inference
+# Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 # Version: 5.0.0.11

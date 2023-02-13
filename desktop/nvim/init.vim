@@ -1,6 +1,6 @@
 " Neovim - Configuration
 
-" Copyright 2022-2023 Inference
+" Copyright 2022-2023 Jake Winters
 " SPDX-License-Identifier: GPL-3.0-or-later
 
 " Version: 1.0.0.5
