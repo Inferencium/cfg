@@ -1,19 +1,22 @@
-# Inferencium
+# Inferencium - xb000-0
 # ejabberd - Configuration
 
-# Copyright 2022-2023 Inference
+# Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-# Version: 0.0.0.0
+# Version: 2.0.0.3
 
 
 # Hosts
 hosts:
   - inferencium.net
+  - dissensionclub.net
 
 # Hosts configuration
 host_config:
   inferencium.net:
+    auth_method: internal
+  dissensionclub.net:
     auth_method: internal
 
 # Language
@@ -50,7 +53,7 @@ allow_multiple_connections: false
 
 # Logging
 loglevel: info
-hide_sensitive_log_data: false
+hide_sensitive_log_data: true
 
 # Certificates
 certfiles:
@@ -91,6 +94,12 @@ listen:
       /captcha: ejabberd_captcha
       /upload: mod_http_upload
       /ws: ejabberd_http_ws
+    custom_headers:
+      "Access-Control-Allow-Origin": "*"
+      "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,PUT"
+      "Access-Control-Allow-Headers": "Authorization"
+      "Access-Control-Allow-Headers": "Content-Type, Origin, X-Requested-Width"
+      "Access-Control-Allow-Credentials": "true"
   -
     port: 5280
     ip: "::"
@@ -198,12 +207,19 @@ modules:
   mod_fail2ban: {}
   mod_http_api: {}
   mod_http_upload:
+    name: HTTP File Upload
+    access: local
     custom_headers:
-      "Access-Control-Allow-Origin": "https://@HOST@"
-      "Access-Control-Allow-Methods": "GET,HEAD,PUT,OPTIONS"
+      "Access-Control-Allow-Origin": "*"
+        #"Access-Control-Allow-Origin": "https://@HOST@"
+      "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,PUT"
       "Access-Control-Allow-Headers": "Content-Type"
+    docroot: /var/lib/ejabberd/upload/@HOST@
+    dir_mode: "2750"
+    file_mode: "0640"
     max_size: 67108864
     put_url: https://@HOST@:5443/upload
+    thumbnail: false
   mod_last: {}
   mod_mam:
     assume_mam_usage: true
