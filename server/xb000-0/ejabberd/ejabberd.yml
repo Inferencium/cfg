@@ -4,7 +4,7 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-# Version: 3.0.0.4
+# Version: 4.0.0.5
 
 
 # Hosts
@@ -28,21 +28,10 @@ auth_password_format: scram
 auth_scram_hash: sha256
 ### Upgrade password hashes to SHA-512 when possible. Currently infeasible due to current users
 ### having passwords created using SHA-256.
-# auth_scram_hash: sha512
-
-## Client-to-Server
-c2s_ciphers:
-  - "ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256"
-c2s_protocol_options:
-  - no_sslv2
-  - no_sslv3
-  - no_tlsv1
-  - no_tlsv1_1
-  - no_compression
-  - cipher_server_preferences
-c2s_tls_compression: false
+#auth_scram_hash: sha512
 
 ## Server-to-Server
+s2s_dhfile: "/etc/ssl/inferencium.net/dh-3072.pem"
 s2s_ciphers:
   - "ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256"
 s2s_protocol_options:
@@ -50,7 +39,6 @@ s2s_protocol_options:
   - no_sslv3
   - no_tlsv1
   - no_tlsv1_1
-  - no_compression
   - cipher_server_preferences
 s2s_use_starttls: required
 s2s_tls_compression: false
@@ -63,31 +51,60 @@ loglevel: info
 hide_sensitive_log_data: true
 
 # Certificates
+ca_file: "/etc/ssl/certs/ca-certificates.crt"
 certfiles:
-  - "/etc/ejabberd/certs/*/*.pem"
+  ## dissensionclub.net
+  - "/etc/ssl/dissensionclub.net/ejabberd.pem"
+  ## inferencium.net
+  - "/etc/ssl/inferencium.net/ejabberd.pem"
+  - "/etc/ssl/hfu.xmpp.inferencium.net/ejabberd.pem"
+  - "/etc/ssl/muc.xmpp.inferencium.net/ejabberd.pem"
+  - "/etc/ssl/xmpp.inferencium.net/ejabberd.pem"
 
 listen:
   -
     port: 5222
     ip: "::"
     module: ejabberd_c2s
+    dhfile: "/etc/ssl/inferencium.net/dh-3072.pem"
+    protocol_options:
+      - no_sslv2
+      - no_sslv3
+      - no_tlsv1
+      - no_tlsv1_1
+    ciphers: "ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256"
+    starttls: true
+    starttls_required: true
+    tls_compression: false
     max_stanza_size: 262144
     shaper: c2s_shaper
     access: c2s
-    starttls_required: true
   -
     port: 5223
     ip: "::"
-    tls: true
     module: ejabberd_c2s
+    dhfile: "/etc/ssl/inferencium.net/dh-3072.pem"
+    tls: true
+    protocol_options:
+      - no_sslv2
+      - no_sslv3
+      - no_tlsv1
+      - no_tlsv1_1
+    ciphers: "ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256"
+    tls_compression: false
     max_stanza_size: 262144
     shaper: c2s_shaper
     access: c2s
-    starttls_required: true
   -
     port: 5269
     ip: "::"
     module: ejabberd_s2s_in
+    tls: true
+    protocol_options:
+      - no_sslv2
+      - no_sslv3
+      - no_tlsv1
+      - no_tlsv1_1
     max_stanza_size: 524288
   -
     port: 5443
@@ -113,7 +130,6 @@ listen:
     module: ejabberd_http
     request_handlers:
       /admin: ejabberd_web_admin
-      /.well-known/acme-challenge: ejabberd_acme
   -
     port: 3478
     ip: "::"
