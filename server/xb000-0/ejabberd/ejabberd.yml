@@ -4,7 +4,7 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-# Version: 4.0.0.5
+# Version: 4.0.1.6
 
 
 # Hosts
@@ -99,12 +99,6 @@ listen:
     port: 5269
     ip: "::"
     module: ejabberd_s2s_in
-    tls: true
-    protocol_options:
-      - no_sslv2
-      - no_sslv3
-      - no_tlsv1
-      - no_tlsv1_1
     max_stanza_size: 524288
   -
     port: 5443
