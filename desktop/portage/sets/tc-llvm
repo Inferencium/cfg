@@ -1,18 +1,20 @@
 # Inferencium
 # Portage - Set - Toolchain - LLVM
 
-# Copyright 2022-2023 Inference
+# Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-# Version: 1.0.0.3
+# Version: 2.0.0.4
 
 
 sys-devel/clang
 sys-devel/clang-common
 sys-devel/clang-runtime
+sys-devel/clang-toolchain-symlinks
 sys-devel/lld
 sys-devel/llvm
 sys-devel/llvm-common
+sys-devel/llvm-toolchain-symlinks
 sys-libs/compiler-rt
 sys-libs/compiler-rt-sanitizers
 sys-libs/libcxx
