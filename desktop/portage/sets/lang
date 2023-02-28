@@ -1,15 +1,15 @@
 # Inferencium
 # Portage - Set - Programming Languages
 
-# Copyright 2023 Inference
+# Copyright 2023 Jake Winters
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-# Version: 1.0.0.1
+# Version: 1.0.1.2
 
 
 # Packages which contain or bootstrap programming languages. These packages should be recompiled
 # after each toolchain update/change, and all software compiled using these programming languages
-# should be recompiled using the recompiled programming languages afterwards.
+# should be recompiled using the recompiled programming languages, afterwards.
 dev-lang/duktape
 dev-lang/go
 dev-lang/lua
