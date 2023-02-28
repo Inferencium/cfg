@@ -1,10 +1,10 @@
 # Inferencium
 # Portage - package.use
 
-# Copyright 2022-2023 Inference
+# Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-# Version: 8.0.0.19
+# Version: 8.0.1.20
 
 
 acct-user/git						gitea
@@ -68,11 +68,11 @@ sys-devel/gcc						-fortran zstd
 sys-devel/llvm						zstd
 sys-fs/cryptsetup					argon2 nls openssl reencrypt udev
 sys-kernel/inf-kernel				symlink
-sys-libs/libcxx						clang static-libs
-sys-libs/libcxxabi					clang static-libs
+sys-libs/libcxx						static-libs
+sys-libs/libcxxabi					static-libs
 sys-libs/ncurses					static-libs
 sys-libs/zlib						minizip
-www-client/librewolf				-clang -dbus -gmp-autoupdate eme-free
+www-client/librewolf				-dbus -gmp-autoupdate eme-free
 x11-libs/cairo						X
 x11-libs/libdrm						video_cards_radeon
 x11-libs/libxkbcommon				X
