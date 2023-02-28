@@ -1,10 +1,10 @@
 # Inferencium
 # Portage - package.accept_keywords
 
-# Copyright 2022-2023 Jake Winters
+# Copyright 2022-2023 Inference
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-# Version: 7.0.0.23
+# Version: 8.0.0.24
 
 
 app-arch/unrar							~amd64
@@ -17,6 +17,7 @@ dev-libs/nss							~amd64
 dev-libs/spdlog							~amd64
 dev-libs/wayland-protocols				~amd64
 fs-util/fsverity-utils					~amd64
+game-rpg/cataclysm-dda					~amd64
 gui-apps/waybar							~amd64
 =gui-wm/sway-1.7						~amd64
 <media-gfx/gimp-3.0.0					**

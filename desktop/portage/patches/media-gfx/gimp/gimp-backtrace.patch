@@ -1,12 +1,11 @@
-diff --git a/app/core/gimpbacktrace-linux.c b/app/core/gimpbacktrace-linux.c
-index e4166e3..91af4f4 100644
---- a/app/core/gimpbacktrace-linux.c
-+++ b/app/core/gimpbacktrace-linux.c
-@@ -39,7 +39,6 @@
- #include <fcntl.h>
- #include <dirent.h>
- #include <signal.h>
--#include <execinfo.h>
- #include <dlfcn.h>
- #include <string.h>
- #include <stdio.h>
+--- a/app/core/gimpbacktrace-backend.h
++++ b/app/core/gimpbacktrace-backend.h
+@@ -22,7 +22,7 @@
+ #define __GIMP_BACKTRACE_BACKEND_H__
+ 
+ 
+-#ifdef __gnu_linux__
++#if defined(__gnu_linux__ ) && defined(__GLIBC__)
+ # define GIMP_BACKTRACE_BACKEND_LINUX
+ #elif defined (G_OS_WIN32) && defined (ARCH_X86)
+ # define GIMP_BACKTRACE_BACKEND_WINDOWS
