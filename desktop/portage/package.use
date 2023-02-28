@@ -1,10 +1,10 @@
 # Inferencium
 # Portage - package.use
 
-# Copyright 2022-2023 Jake Winters
+# Copyright 2022-2023 Inference
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-# Version: 6.0.0.17
+# Version: 8.0.0.19
 
 
 acct-user/git						gitea
@@ -29,11 +29,13 @@ dev-qt/qtwebengine					widgets
 dev-util/android-tools				udev
 gui-apps/grim						jpeg
 gui-apps/waybar						-popups -sndio -tray mpd network
-gui-wm/sway							-swaybar man swaybg swayidle swaylock swaymsg
+gui-libs/wlroots					X
+gui-wm/sway							-swaybar man swaybg swayidle swaylock swaymsg X
 media-fonts/noto					cjk
 media-gfx/graphicsmagick			png
 media-libs/babl						lcms introspection
 media-libs/freeimage				jpeg jpeg2k png raw tiff webp
+media-libs/freetype					harfbuzz
 media-libs/gegl						cairo introspection lcms
 media-libs/harfbuzz					icu glib introspection truetype
 media-libs/imlib2					X
