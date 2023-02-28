@@ -1,10 +1,10 @@
-# Jake Winters
+# Inferencium
 # Git - Configuration
 
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-# Version: 1.0.0.1
+# Version: 2.0.0.2
 
 
 # Inferencium
@@ -12,21 +12,19 @@
 		path = ~/.gitconfig-inf
 [includeIf "gitdir:/git/inferencium/doc/"]
 		path = ~/.gitconfig-inf
-[includeIf "gitdir:/git/inferencium/general/"]
-		path = ~/.gitconfig-inf
 [includeIf "gitdir:/git/inferencium/graphenechan/"]
 		path = ~/.gitconfig-inf
 [includeIf "gitdir:/git/inferencium/inf-kernel/"]
 		path = ~/.gitconfig-inf
-[includeIf "gitdir:/git/inferencium/linux-firmware"]
+[includeIf "gitdir:/git/inferencium/linux-firmware-desktop/"]
+		path = ~/.gitconfig-inf
+[includeIf "gitdir:/git/inferencium/linux-firmware-server/"]
 		path = ~/.gitconfig-inf
 [includeIf "gitdir:/git/inferencium/mmd"]
 		path = ~/.gitconfig-inf
 [includeIf "gitdir:/git/inferencium/scr/"]
 		path = ~/.gitconfig-inf
-[includeIf "gitdir:/git/inferencium/server-prv"]
-		path = ~/.gitconfig-inf
-[includeIf "gitdir:/git/inferencium/server-pub"]
+[includeIf "gitdir:/git/inferencium/sys/"]
 		path = ~/.gitconfig-inf
 [includeIf "gitdir:/git/inferencium/website/"]
 		path = ~/.gitconfig-inf
