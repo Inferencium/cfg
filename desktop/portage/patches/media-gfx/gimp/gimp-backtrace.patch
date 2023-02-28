@@ -1,0 +1,12 @@
+diff --git a/app/core/gimpbacktrace-linux.c b/app/core/gimpbacktrace-linux.c
+index e4166e3..91af4f4 100644
+--- a/app/core/gimpbacktrace-linux.c
++++ b/app/core/gimpbacktrace-linux.c
+@@ -39,7 +39,6 @@
+ #include <fcntl.h>
+ #include <dirent.h>
+ #include <signal.h>
+-#include <execinfo.h>
+ #include <dlfcn.h>
+ #include <string.h>
+ #include <stdio.h>

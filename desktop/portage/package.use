@@ -1,0 +1,77 @@
+# Inferencium
+# Portage - package.use
+
+# Copyright 2022-2023 Jake Winters
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+# Version: 6.0.0.17
+
+
+acct-user/git						gitea
+app-admin/keepassxc					-network yubikey
+app-crypt/gcr						gtk
+app-text/poppler					cairo
+app-text/xmlto						text
+dev-cpp/cairomm						X
+dev-lang/rust						system-llvm
+dev-libs/libedit					static-libs
+dev-libs/libpcre					-readline
+dev-libs/libpcre2					-readline
+dev-libs/libsodium					-verify-sig
+dev-libs/libusb						udev
+dev-libs/libxml2					icu
+dev-python/PyQt5					svg gui widgets webchannel printsupport network
+dev-qt/qtcore						icu
+dev-qt/qtgui						egl eglfs jpeg X
+dev-qt/qtmultimedia					widgets
+dev-qt/qtwebchannel					qml
+dev-qt/qtwebengine					widgets
+dev-util/android-tools				udev
+gui-apps/grim						jpeg
+gui-apps/waybar						-popups -sndio -tray mpd network
+gui-wm/sway							-swaybar man swaybg swayidle swaylock swaymsg
+media-fonts/noto					cjk
+media-gfx/graphicsmagick			png
+media-libs/babl						lcms introspection
+media-libs/freeimage				jpeg jpeg2k png raw tiff webp
+media-libs/gegl						cairo introspection lcms
+media-libs/harfbuzz					icu glib introspection truetype
+media-libs/imlib2					X
+media-libs/libepoxy					X
+media-libs/libglvnd					X
+media-libs/libpng					apng
+media-libs/libpulse					X
+media-libs/libraw					jpeg
+media-libs/libsdl2					gles2 opengl X
+media-libs/libvpx					postproc
+media-libs/mesa						X
+media-libs/opencv					contrib contribdnn
+media-libs/sdl2-image				gif jpeg png tiff webp
+media-libs/sdl2-mixer				-fluidsynth -mad -midi -mikmod -mod -modplug -playtools -static-libs -timidity -tremor flac mp3 opus vorbis wav
+media-plugins/alsa-plugins			pulseaudio
+media-video/ffmpeg					mp3 sdl theora vorbis vpx X x264 xvid
+media-video/mpv						-xv cli
+net-dns/dnsmasq						ipv6 script
+net-im/profanity					-gpg -otr omemo
+net-libs/nodejs						-lto inspector
+net-libs/zeromq						drafts
+net-misc/chrony						nts -ntp
+sys-auth/polkit						duktape
+sys-auth/seatd						server
+sys-block/parted					device-mapper
+sys-devel/binutils					cet static-libs
+sys-devel/clang-common				default-compiler-rt default-libcxx default-lld stricter
+sys-devel/clang-runtime				libcxx
+sys-devel/gcc						-fortran zstd
+sys-devel/llvm						zstd
+sys-fs/cryptsetup					argon2 nls openssl reencrypt udev
+sys-kernel/inf-kernel				symlink
+sys-libs/libcxx						clang static-libs
+sys-libs/libcxxabi					clang static-libs
+sys-libs/ncurses					static-libs
+sys-libs/zlib						minizip
+www-client/librewolf				-clang -dbus -gmp-autoupdate eme-free
+x11-libs/cairo						X
+x11-libs/libdrm						video_cards_radeon
+x11-libs/libxkbcommon				X
+x11-libs/pango						X

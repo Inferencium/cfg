@@ -1,0 +1,35 @@
+# Inferencium
+# Portage - package.mask
+
+# Copyright 2022-2023 Jake Winters
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+# 3.0.0.4
+
+
+# Global
+#*/*x11*
+#*/*xorg*
+## sudo is a security risk due to overly complex configuration; doas is a superior alternative with
+## simple configuration.
+app-admin/sudo
+## Hikari frequently loses connection to Wayland server and kills open processes.
+gui-wm/hikari
+## llvm-libunwind is an LLVM-optimised alternative to libunwind.
+#sys-libs/libunwind
+## Chromium is incompatible with musl, and patches to make it compatible are unmaintainable.
+www-client/chromium
+## Firefox includes unnecessary features for a web browser, and its practices are questionable;
+## LibreWolf is a minimal alternative which strips these features.
+www-client/firefox
+
+# Gentoo
+## Gentoo kernels are often behind with updates for lengthy periods of time; this is unacceptable
+## for high-security systems.
+sys-kernel/*-kernel::gentoo
+sys-kernel/*-kernel-bin::gentoo
+sys-kernel/*-sources::gentoo
+## Downloading entire linux-firmware package when only a small amount of firmware files are required
+## is a waste of bandwidth; switched to in-house linux-firmware package which contains only required
+## firmware files.
+sys-kernel/linux-firmware::gentoo
