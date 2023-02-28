@@ -1,0 +1,16 @@
+// Chromium - Profile - No JIT
+
+// Copyright 2022-2023 Jake Winters
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+// Version: 1.0.1.2
+
+
+[Desktop Entry]
+Name=Chromium (profile_name)
+Comment=
+Exec=chromium --user-data-dir=/home/user/.config/chromium/profile_name --js-flags=--jitless
+Terminal=false
+Type=Application
+Icon=chromium
+Categories=Network;
