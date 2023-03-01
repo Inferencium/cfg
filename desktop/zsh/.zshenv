@@ -4,7 +4,7 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-# Version: 1.0.0.7
+# Version: 2.0.0.8
 
 
 PATH="/bin/:/usr/bin/:/usr/local/bin/"
@@ -16,5 +16,10 @@ PAGER="/usr/bin/less"
 EDITOR="/usr/bin/nvim"
 KDEDIRS="/usr/"
 CONFIG_PROTECT="/etc/alacritty/ \
+				/etc/mc/ \
+				/etc/mpv/ \
+				/etc/neofetch/ \
 				/etc/nvim/ \
+				/etc/sway/ \
+				/etc/waybar/ \
 				/etc/zsh/"
