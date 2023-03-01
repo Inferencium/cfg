@@ -1,0 +1,10 @@
+# Inferencium
+# SSH - Allowed Signers
+
+# Copyright 2023 Jake Winters
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+# Version: 2.0.0.2
+
+
+inference ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINs8UH2hVmNSg0qKig/9ZQt07IuOHsorRfw1doEgMuJ8
