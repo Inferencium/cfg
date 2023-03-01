@@ -4,10 +4,10 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-# Version: 2.0.0.6
+# Version: 3.0.0.7
 
 
-# Navigation.
+# Navigation
 alias ..='cd ..'
 alias cl='clear'
 alias l='ls -CF --color=auto'
@@ -16,9 +16,12 @@ alias ll='ls -l --color=auto'
 alias ls='ls -F --color=auto'
 alias tr='tree -C'
 
-# File management.
+# File management
 alias clp='wl-copy'
 alias cp='rsync -acv'
 alias md='mkdir -v'
 alias mv='mv -iv'
 alias rm='rm -iv'
+
+# Tools
+alias diff='diff -s'
