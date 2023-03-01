@@ -1,0 +1,109 @@
+/* Inferencium */
+/* Waybar - Style */
+
+/* Copyright 2022-2023 Jake Winters */
+/* SPDX-License-Identifier: GPL-3.0-or-later */
+
+/* Version: 1.0.0.2 */
+
+
+* {
+	font-family: Terminus;
+	font-size: 14px;
+}
+
+window#waybar {
+	background-color: rgba(0, 0, 0, 100);
+	border-bottom: 3px solid rgba(0, 0, 0, 100);
+	color: #bcbcbc;
+}
+
+#clock {
+	padding: 0 12px;
+	background-color: #000000;
+	color: #bcbcbc;
+}
+
+#workspaces button {
+	padding: 0 12px;
+	background-color: #000000;
+	color: #bcbcbc;
+	border: none;
+	border-radius: 0;
+}
+
+#workspaces button.focused {
+	background-color: #bcbcbc;
+	color: #000000;
+}
+
+#workspaces button.urgent {
+	background-color: #ffa600;
+	color: #000000;
+}
+
+#pulseaudio {
+	padding: 0 12px;
+	background-color: #000000;
+	color: #bcbcbc;
+}
+
+#pulseaudio.muted {
+	padding: 0 12px;
+	background-color: #000000;
+	color: #bcbcbc;
+}
+
+#backlight {
+	padding: 0 12px;
+	background-color: #000000;
+	color: #bcbcbc;
+}
+
+#language {
+	padding: 0 12px;
+	background-color: #000000;
+	color: #bcbcbc;
+}
+
+#cpu {
+	padding: 0 12px;
+	background-color: #003487;
+	color: #ffffff;
+}
+
+#temperature {
+	padding: 0 12px;
+	background-color: #003487;
+	color: #ffffff;
+}
+
+#memory {
+	padding: 0 12px;
+	background-color: #a60000;
+	color: #ffffff;
+}
+
+#disk {
+	padding: 0 12px;
+	background-color: #c79500;
+	color: #000000;
+}
+
+#network {
+	padding: 0 12px;
+	background-color: #007a00;
+	color: #ffffff;
+}
+
+#network.disconnected {
+	padding: 0 12px;
+	background-color: #007a00;
+	color: #ffffff;
+}
+
+#battery {
+	padding: 0 12px;
+	background-color: #000000;
+	color: #bcbcbc;
+}
