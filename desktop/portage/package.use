@@ -4,7 +4,7 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-# Version: 8.0.1.20
+# Version: 9.0.0.21
 
 
 acct-user/git						gitea
@@ -12,6 +12,7 @@ app-admin/keepassxc					-network yubikey
 app-crypt/gcr						gtk
 app-text/poppler					cairo
 app-text/xmlto						text
+dev-db/postgresql					uuid
 dev-cpp/cairomm						X
 dev-lang/rust						system-llvm
 dev-libs/libedit					static-libs
