@@ -2,9 +2,9 @@
 # Portage - Set - Programming Languages
 
 # Copyright 2023 Jake Winters
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 1.0.1.2
+# Version: 2.0.0.3
 
 
 # Packages which contain or bootstrap programming languages. These packages should be recompiled

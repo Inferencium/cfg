@@ -4,7 +4,7 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-# Version: 5.0.1.12
+# Version: 6.0.0.13
 
 
 # Temporary export variables until permanent solution is found

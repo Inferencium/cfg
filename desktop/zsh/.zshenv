@@ -4,7 +4,7 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-# Version: 2.0.0.8
+# Version: 3.0.0.9
 
 
 PATH="/bin/:/usr/bin/:/usr/local/bin/"
