@@ -2,9 +2,9 @@
 " Neovim - Configuration
 
 " Copyright 2022-2023 Jake Winters
-" SPDX-License-Identifier: GPL-3.0-or-later
+" SPDX-License-Identifier: BSD-3-Clause-Clear
 
-" Version: 1.0.1.6
+" Version: 2.0.0.7
 
 
 " Editor.
