@@ -2,9 +2,9 @@
 # ZSH - env
 
 # Copyright 2022-2023 Jake Winters
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 3.0.0.9
+# Version: 4.0.0.10
 
 
 PATH="/bin/:/usr/bin/:/usr/local/bin/"
