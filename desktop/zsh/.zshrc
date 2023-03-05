@@ -2,9 +2,9 @@
 # ZSH - rc
 
 # Copyright 2022-2023 Jake Winters
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 6.0.0.13
+# Version: 7.0.0.14
 
 
 # Temporary export variables until permanent solution is found
