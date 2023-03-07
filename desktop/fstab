@@ -4,7 +4,7 @@
 # Copyright 2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 0.0.0.0
+# Version: 1.0.0.1
 
 
 # The root filesystem should have a pass number of either 0 or 1.
@@ -15,7 +15,7 @@
 ## boot
 PARTUUID=[REDACTED]		/boot/			ext4		noauto,noatime					1 2
 ## swap
-/dev/nvme0n1p2			none			swap		defaults						0 0
+/dev/mapper/swap		none			swap		defaults						0 0
 ## root
 UUID=[REDACTED]			/				btrfs		acl,barrier,datacow,datasum		0 1
 ## home
