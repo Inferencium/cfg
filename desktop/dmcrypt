@@ -4,7 +4,7 @@
 # Copyright 2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 0.0.0.0
+# Version: 1.0.1.2
 
 
 # Global
@@ -20,5 +20,5 @@ dmcrypt_retries=5
 ## These should come first so no keys make their way into unencrypted swap.
 swap=swap
 source='/dev/nvme0n1p2'
-options='-c aes-xts-plain64 -s 512 -h sha512 -d /dev/urandom'
+options='-c aes-xts-plain64 -s 512 -d /dev/urandom'
 
