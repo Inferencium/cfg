@@ -4,14 +4,14 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 7.0.0.14
+# Version: 7.1.2.17
 
 
-# Temporary export variables until permanent solution is found
+# Temporarily export variables until permanent solution is found
 export LD_PRELOAD="/usr/local/lib/libhardened_malloc.so"
 
 # Prompt
-PROMPT=%n@%M:%#" "
+PROMPT="%n@%M - %~/ : %# "
 
 # Options
 setopt extendedglob KSH_ARRAYS nomatch
