@@ -4,7 +4,7 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 7.2.1.19
+# Version: 7.2.2.20
 
 
 # Temporarily export variables until permanent solution is found
@@ -27,7 +27,7 @@ bindkey "^[[F" end-of-line
 # zstyle
 zstyle :compinstall filename '~/.zshrc'
 zstyle ':completion:*' menu select
-zstyle ':vcs_info:git:*' formats '%F{240}%r%f%F{27}(%b)'
+zstyle ':vcs_info:git:*' formats '%r%f (%b)'
 zstyle ':vcs_info:*' enable git
 
 autoload -Uz compinit
