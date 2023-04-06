@@ -4,7 +4,7 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 7.1.2.17
+# Version: 7.2.1.19
 
 
 # Temporarily export variables until permanent solution is found
@@ -12,9 +12,10 @@ export LD_PRELOAD="/usr/local/lib/libhardened_malloc.so"
 
 # Prompt
 PROMPT="%n@%M - %~/ : %# "
+RPROMPT=\$vcs_info_msg_0_
 
 # Options
-setopt extendedglob KSH_ARRAYS nomatch
+setopt extendedglob KSH_ARRAYS nomatch prompt_subst
 unsetopt autocd AUTO_REMOVE_SLASH beep
 
 # Keybinds
@@ -26,9 +27,15 @@ bindkey "^[[F" end-of-line
 # zstyle
 zstyle :compinstall filename '~/.zshrc'
 zstyle ':completion:*' menu select
+zstyle ':vcs_info:git:*' formats '%F{240}%r%f%F{27}(%b)'
+zstyle ':vcs_info:*' enable git
 
 autoload -Uz compinit
 compinit
+autoload -Uz vcs_info
+
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
 
 # History
 HISTFILE=~/.zsh-history
