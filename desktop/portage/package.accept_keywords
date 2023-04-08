@@ -4,7 +4,7 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 9.0.0.26
+# Version: 9.3.0.29
 
 
 app-arch/unrar							~amd64
@@ -30,10 +30,13 @@ sys-auth/elogind						~amd64
 sys-devel/clang							~amd64
 sys-devel/clang-common					~amd64
 sys-devel/clang-runtime					~amd64
+sys-devel/clang-toolchain-symlinks		~amd64
 =sys-devel/gcc-12.2.0					~amd64
 sys-devel/lld							~amd64
+sys-devel/lld-toolchain-symlinks		~amd64
 sys-devel/llvm							~amd64
 sys-devel/llvm-common					~amd64
+sys-devel/llvm-toolchain-symlinks		~amd64
 sys-fs/jmtpfs							~amd64
 sys-kernel/inf-kernel					~amd64
 sys-kernel/linux-firmware-desktop		~amd64

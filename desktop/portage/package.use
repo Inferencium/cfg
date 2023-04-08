@@ -4,7 +4,7 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 10.0.0.22
+# Version: 10.1.0.23
 
 
 acct-user/git						gitea
@@ -66,7 +66,7 @@ sys-devel/binutils					cet static-libs
 sys-devel/clang-common				default-compiler-rt default-libcxx default-lld stricter
 sys-devel/clang-runtime				libcxx
 sys-devel/gcc						-fortran zstd
-sys-devel/llvm						zstd
+#sys-devel/llvm						zstd
 sys-fs/cryptsetup					argon2 nls openssl reencrypt udev
 sys-kernel/inf-kernel				symlink
 sys-libs/libcxx						static-libs
