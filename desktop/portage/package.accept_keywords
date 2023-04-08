@@ -4,7 +4,7 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 9.0.0.26
+# Version: 9.1.0.27
 
 
 app-arch/unrar							~amd64
@@ -34,6 +34,7 @@ sys-devel/clang-runtime					~amd64
 sys-devel/lld							~amd64
 sys-devel/llvm							~amd64
 sys-devel/llvm-common					~amd64
+sys-devel/llvm-toolchain-symlinks		~amd64
 sys-fs/jmtpfs							~amd64
 sys-kernel/inf-kernel					~amd64
 sys-kernel/linux-firmware-desktop		~amd64
