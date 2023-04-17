@@ -4,7 +4,7 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 9.3.0.29
+# Version: 9.4.0.30
 
 
 app-arch/unrar							~amd64
@@ -47,4 +47,5 @@ sys-libs/libcxxabi						~amd64
 sys-libs/libomp							~amd64
 sys-libs/libucontext					~amd64
 virtual/rust							~amd64
+www-apps/gitea							~amd64
 www-client/librewolf					~amd64
