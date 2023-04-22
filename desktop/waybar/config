@@ -4,154 +4,154 @@
 // Copyright 2022-2023 Jake Winters
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 
-// Version: 3.0.0.6
+// Version: 3.0.1.7
 
 
 {
-	"layer": "top",
-	"position": "top",
-	"height": 30,
+		"layer": "top",
+		"position": "top",
+		"height": 30,
 
-	"modules-left": [
-		"clock#date",
-		"clock#time",
-	],
+		"modules-left": [
+						"clock#date",
+						"clock#time",
+		],
 
-	"modules-center": [
-		"sway/workspaces",
-		"sway/mode",
-	],
+		"modules-center": [
+						"sway/workspaces",
+						"sway/mode",
+		],
 
-	"modules-right": [
-		"pulseaudio",
-		"sway/language",
-		"cpu",
-		"temperature",
-		"memory",
-		"disk",
-		"network",
-	],
+		"modules-right": [
+						"pulseaudio",
+						"sway/language",
+						"cpu",
+						"temperature",
+						"memory",
+						"disk",
+						"network",
+		],
 
-	"clock#date": {
-                "interval": 1,
-                "format": "{:%Y-%m-%d}",
-		"disable-hover": true,
-		"disable-click": true,
-		"disable-scroll": true,
-                "tooltip": false,
-	},
+		"clock#date": {
+						"interval": 1,
+						"format": "{:%Y-%m-%d}",
+						"disable-hover": true,
+						"disable-click": true,
+						"disable-scroll": true,
+						"tooltip": false,
+		},
 
-	"clock#time": {
-                "interval": 1,
-                "format": "{:%H:%M:%S}",
-		"disable-hover": true,
-		"disable-click": true,
-		"disable-scroll": true,
-                "tooltip": false,
-	},
+		"clock#time": {
+						"interval": 1,
+						"format": "{:%H:%M:%S}",
+						"disable-hover": true,
+						"disable-click": true,
+						"disable-scroll": true,
+						"tooltip": false,
+		},
 
-	"battery": {
-		"interval": 1,
-		"format": " {capacity}%",
-		"format-discharging": " {capacity}%",
-		"disable-hover": true,
-		"disable-click": true,
-		"disable-scroll": true,
-		"tooltip": false,
-	},
+		"battery": {
+						"interval": 1,
+						"format": " {capacity}%",
+						"format-discharging": " {capacity}%",
+						"disable-hover": true,
+						"disable-click": true,
+						"disable-scroll": true,
+						"tooltip": false,
+		},
 
-	"cpu": {
-		"interval": 1,
-		"format": " {usage:3}%    {avg_frequency:0.03} GHz",
-		"disable-hover": true,
-		"disable-click": true,
-		"disable-scroll": true,
-		"tooltip": false,
-	},
+		"cpu": {
+						"interval": 1,
+						"format": " {usage:3}%    {avg_frequency:0.03} GHz",
+						"disable-hover": true,
+						"disable-click": true,
+						"disable-scroll": true,
+						"tooltip": false,
+		},
 
-	"sway/language": {
-		"format": " {short}",
-		"min-length": 4,
-		"disable-hover": true,
-		"disable-click": true,
-		"disable-scroll": true,
-		"tooltip": false,
-	},
+		"sway/language": {
+						"format": " {short}",
+						"min-length": 4,
+						"disable-hover": true,
+						"disable-click": true,
+						"disable-scroll": true,
+						"tooltip": false,
+		},
 
-	"memory": {
-		"interval": 1,
-		"format": " {used:0.02f} GiB / {total:0.02f} GiB",
-		"disable-hover": true,
-		"disable-click": true,
-		"disable-scroll": true,
-		"tooltip": false,
-	},
+		"memory": {
+						"interval": 1,
+						"format": " {used:0.02f} GiB / {total:0.02f} GiB",
+						"disable-hover": true,
+						"disable-click": true,
+						"disable-scroll": true,
+						"tooltip": false,
+		},
 
-	"disk": {
-		"interval": 1,
-		"format": " {used} / {total}",
-		"disable-hover": true,
-		"disable-click": true,
-		"disable-scroll": true,
-		"tooltip": false,
-	},
+		"disk": {
+						"interval": 1,
+						"format": " {used} / {total}",
+						"disable-hover": true,
+						"disable-click": true,
+						"disable-scroll": true,
+						"tooltip": false,
+		},
 
-	"network": {
-		"interface": "enp37s0",
-		"interval": 1,
-		"format-ethernet": " {ifname}: {ipaddr}/{cidr}",
-		"format-disconnected": "  {ifname}",
-		"disable-hover": true,
-		"disable-click": true,
-		"disable-scroll": true,
-		"tooltip": false,
-	},
+		"network": {
+						"interface": "enp37s0",
+						"interval": 1,
+						"format-ethernet": " {ifname}: {ipaddr}/{cidr}",
+						"format-disconnected": "  {ifname}",
+						"disable-hover": true,
+						"disable-click": true,
+						"disable-scroll": true,
+						"tooltip": false,
+		},
 
-	"sway/workspaces": {
-		"format": "{name}",
-		"all-outputs": false,
-		"disable-hover": true,
-		"disable-click": true,
-		"disable-scroll": true,
-		"tooltip": false,
-	},
+		"sway/workspaces": {
+						"format": "{name}",
+						"all-outputs": false,
+						"disable-hover": true,
+						"disable-click": true,
+						"disable-scroll": true,
+						"tooltip": false,
+		},
 
-        "sway/mode": {
-                "format": " {}"  ,
-		"disable-hover": true,
-		"disable-click": true,
-		"disable-scroll": true,
-		"tooltip": false,
-        },
+		"sway/mode": {
+						"format": " {}"  ,
+						"disable-hover": true,
+						"disable-click": true,
+						"disable-scroll": true,
+						"tooltip": false,
+		},
 
-	"pulseaudio": {
-		"format": " {volume:3}%",
-		"format-muted": " {volume:3}%",
-		"disable-hover": true,
-		"disable-click": true,
-		"disable-scroll": true,
-		"tooltip": false,
-	},
+		"pulseaudio": {
+						"format": " {volume:3}%",
+						"format-muted": " {volume:3}%",
+						"disable-hover": true,
+						"disable-click": true,
+						"disable-scroll": true,
+						"tooltip": false,
+		},
 
-	"backlight": {
-		"device": "amdgpu_bl0",
-		"format": " {percent:3}%",
-		"disable-hover": true,
-		"disable-click": true,
-		"disable-scroll": true,
-		"tooltip": false,
-	},
+		"backlight": {
+						"device": "amdgpu_bl0",
+						"format": " {percent:3}%",
+						"disable-hover": true,
+						"disable-click": true,
+						"disable-scroll": true,
+						"tooltip": false,
+		},
 
-	"temperature": {
-		"interval": 1,
-		"thermal-zone": 0,
-		"hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
-		"critical-threshold": 90,
-		"format": "{temperatureC:3}°C",
-		"disable-hover": true,
-		"disable-click": true,
-		"disable-scroll": true,
-		"tooltip": false,
-	},
+		"temperature": {
+						"interval": 1,
+						"thermal-zone": 0,
+						"hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
+						"critical-threshold": 90,
+						"format": "{temperatureC:3}°C",
+						"disable-hover": true,
+						"disable-click": true,
+						"disable-scroll": true,
+						"tooltip": false,
+		},
 
 }
