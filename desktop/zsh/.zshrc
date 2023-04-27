@@ -4,7 +4,7 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 7.2.2.20
+# Version: 7.3.0.21
 
 
 # Temporarily export variables until permanent solution is found
@@ -60,3 +60,7 @@ fi
 if [[ -f ~/.zsh-alias-user ]]; then
     . ~/.zsh-alias-user
 fi
+
+# fzf
+source /etc/fzf/completion-zsh
+source /usr/share/fzf/key-bindings.zsh
