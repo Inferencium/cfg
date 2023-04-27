@@ -4,10 +4,10 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 7.4.0.23
+# Version: 7.4.1.24
 
 
-# Temporarily export variables until permanent solution is found
+# Temporarily export system-wide environmental variables until permanent solution is found
 export LD_PRELOAD="/usr/local/lib/libhardened_malloc.so"
 export FZF_DEFAULT_OPTS="--extended"
 
