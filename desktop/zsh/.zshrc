@@ -4,11 +4,13 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 7.2.2.20
+# Version: 7.4.2.25
 
 
-# Temporarily export variables until permanent solution is found
+# Environmental variables
+# Temporarily export system-wide environmental variables until permanent solution is found
 export LD_PRELOAD="/usr/local/lib/libhardened_malloc.so"
+export FZF_DEFAULT_OPTS="--extended"
 
 # Prompt
 PROMPT="%n@%M - %~/ : %# "
@@ -51,7 +53,7 @@ if test -z "${XDG_RUNTIME_DIR}"; then
     fi
 fi
 
-# Aliases.
+# Aliases
 ## Global
 if [[ -f ~/.zsh-alias-global ]]; then
     . ~/.zsh-alias-global
@@ -60,3 +62,7 @@ fi
 if [[ -f ~/.zsh-alias-user ]]; then
     . ~/.zsh-alias-user
 fi
+
+# fzf
+source /etc/fzf/completion-zsh
+source /usr/share/fzf/key-bindings.zsh
