@@ -4,7 +4,7 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 7.3.0.21
+# Version: 7.3.1.22
 
 
 # Temporarily export variables until permanent solution is found
@@ -51,7 +51,7 @@ if test -z "${XDG_RUNTIME_DIR}"; then
     fi
 fi
 
-# Aliases.
+# Aliases
 ## Global
 if [[ -f ~/.zsh-alias-global ]]; then
     . ~/.zsh-alias-global
