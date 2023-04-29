@@ -4,22 +4,22 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 5.1.0.10
+# Version: 5.1.0.11
 
 
-## xa000
+# xa000
 Host inferencium-prv xa000.inferencium.net
 		HostName xa000.inferencium.net
 		User root
 
 
-## xb000
+# xb000
 Host inferencium-pub xb000.inferencium.net
 		HostName xb000.inferencium.net
 		User root
 
 
-## Git
+# Git
 Host codeberg codeberg.org
 		HostName codeberg.org
 		User git
