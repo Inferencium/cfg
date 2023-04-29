@@ -4,9 +4,22 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 5.1.0.8
+# Version: 5.1.0.9
 
 
+## xa000
+Host inferencium-prv xa000.inferencium.net
+		HostName xa000.inferencium.net
+		User root
+
+
+## xb000
+Host inferencium-pub xb000.inferencium.net
+		HostName xb000.inferencium.net
+		User root
+
+
+## Git
 Host codeberg codeberg.org
 		HostName codeberg.org
 		User git
@@ -17,18 +30,10 @@ Host github github.com
 		User git
 		IdentityFile /home/a00-sys/.ssh/ssh-inf-a00-sys-ed25519
 
-Host inferencium-prv xa000.inferencium.net
-		HostName xa000.inferencium.net
-		User root
-
 Host inferencium-prv-git int.git.inferencium.net
 		HostName int.git.inferencium.net
 		User git
 		IdentityFile /home/a00-sys/.ssh/ssh-inf-a00-sys-ed25519
-
-Host inferencium-pub xb000.inferencium.net
-		HostName xb000.inferencium.net
-		User root
 
 Host inferencium-pub-git git.inferencium.net
 		HostName git.inferencium.net
