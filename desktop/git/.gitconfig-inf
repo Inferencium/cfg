@@ -4,11 +4,26 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 2.0.0.2
+# Version: 3.0.1.4
 
 
 # Inferencium
+[commit]
+gpgSign = true
+
+
+[tag]
+gpgSign = true
+
+
+[gpg]
+format = ssh
+
+[gpg "ssh"]
+allowedSignersFile = ~/.ssh/allowed_signers
+
+
 [user]
 name = inference
 email = admin@inferencium.net
-signingKey = /home/a00-sys/.ssh/ssh-inf-a00-sys-ed25519
+signingKey = ~/.ssh/ssh-inf-a00-sys-ed25519
