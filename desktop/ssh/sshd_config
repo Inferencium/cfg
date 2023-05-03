@@ -4,7 +4,7 @@
 # Copyright 2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 0.0.0.0
+# Version: 0.0.1.1
 
 
 Port 22
@@ -29,7 +29,7 @@ MACs -*
 
 # Authentication
 LoginGraceTime 30s
-PermitRootLogin no
+PermitRootLogin yes
 StrictModes yes
 MaxAuthTries 1
 MaxSessions 5
