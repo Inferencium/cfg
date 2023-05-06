@@ -4,10 +4,9 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 3.0.1.4
+# Version: 3.0.2.5
 
 
-# Inferencium
 [commit]
 gpgSign = true
 
