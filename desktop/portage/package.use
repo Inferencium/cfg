@@ -4,7 +4,7 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 10.1.0.23
+# Version: 11.0.0.26
 
 
 acct-user/git						gitea
@@ -52,6 +52,7 @@ media-libs/opencv					contrib contribdnn
 media-libs/sdl2-image				gif jpeg png tiff webp
 media-libs/sdl2-mixer				-fluidsynth -mad -midi -mikmod -mod -modplug -playtools -static-libs -timidity -tremor flac mp3 opus vorbis wav
 media-plugins/alsa-plugins			pulseaudio
+media-sound/pulseaudio				daemon
 media-video/ffmpeg					mp3 sdl theora vorbis vpx X x264 xvid
 media-video/mpv						-xv cli
 net-dns/dnsmasq						ipv6 script
@@ -66,7 +67,7 @@ sys-devel/binutils					cet static-libs
 sys-devel/clang-common				default-compiler-rt default-libcxx default-lld stricter
 sys-devel/clang-runtime				libcxx
 sys-devel/gcc						-fortran zstd
-#sys-devel/llvm						zstd
+sys-devel/llvm						-zstd
 sys-fs/cryptsetup					argon2 nls openssl reencrypt udev
 sys-kernel/inf-kernel				symlink
 sys-libs/libcxx						static-libs
