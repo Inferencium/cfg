@@ -3,11 +3,9 @@ Inferencium configuration files.
 <br>
 <br>
 ## Licensing
-All content is licensed under <a href="https://git.inferencium.net/Inferencium/cfg/src/branch/stable/license/BSD-3-Clause-Clear.txt"
->BSD-3-Clause-Clear</a> license&#42;.
+All content is licensed under <a href="https://git.inferencium.net/Inferencium/cfg/src/branch/stable/license/BSD-3-Clause-Clear.txt">BSD-3-Clause-Clear</a> license&#42;.
 <br>
-\*Excluding Linux configuration file(s), which are licensed under <a href=https://git.inferencium.net/Inferencium/cfg/src/branch/stable/license/GPL-2.0-only.txt"
->GPL-2.0-only</a> license.
+\*Excluding Linux configuration file(s), which are licensed under <a href=https://git.inferencium.net/Inferencium/cfg/src/branch/stable/license/GPL-2.0-only.txt">GPL-2.0-only</a> license.
 <br>
 <br>
 ## Security
