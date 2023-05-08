@@ -4,8 +4,34 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 3.0.0.3
+# Version: 4.0.0.6
 
+
+# Global
+[diff]
+		algorithm = histogram
+
+# Codeberg
+[includeIf "gitdir:/git/codeberg/key/"]
+		path = ~/.gitconfig-inf
+
+# GitHub
+[includeIf "gitdir:/git/github/accrescent.app/"]
+		path = ~/.gitconfig-inf
+[includeIf "gitdir:/git/github/awecron/"]
+		path = ~/.gitconfig-inf
+[includeIf "gitdir:/git/github/grapheneos-website/"]
+		path = ~/.gitconfig-inf
+[includeIf "gitdir:/git/github/isoalloc/"]
+		path = ~/.gitconfig-inf
+[includeIf "gitdir:/git/github/key/"]
+		path = ~/.gitconfig-inf
+[includeIf "gitdir:/git/github/madaidans-insecurities.github.io/"]
+		path = ~/.gitconfig-inf
+[includeIf "gitdir:/git/github/platform_frameworks_base/"]
+		path = ~/.gitconfig-inf
+[includeIf "gitdir:/git/github/privsec.dev/"]
+		path = ~/.gitconfig.inf
 
 # Inferencium
 [includeIf "gitdir:/git/inferencium/cfg/"]
