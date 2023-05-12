@@ -1,6 +1,6 @@
 = Configuration
 
-Inferencium configuration files. +
+Inferencium configuration files.
 
 == Licensing
 All content is licensed under https://git.inferencium.net/Inferencium/cfg/src/branch/stable/license/BSD-3-Clause-Clear.txt[BSD 3 Clause Clear]
