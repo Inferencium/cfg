@@ -3,6 +3,7 @@
 Inferencium configuration files.
 
 == Licensing
+
 All content is licensed under https://git.inferencium.net/Inferencium/cfg/src/branch/stable/license/BSD-3-Clause-Clear.txt[BSD 3 Clause Clear]
 license*. +
  +
@@ -10,6 +11,7 @@ license*. +
 license.
 
 == Security
+
 All files are checked for security issues; however, it is always the user's responsibility to
 audit the code before installing and/or executing it. +
  +
@@ -18,29 +20,35 @@ repository.
 
 == Branches
 
-=== https://git.inferencium.net/Inferencium/cfg/src/branch/main/[main] +
+=== https://git.inferencium.net/Inferencium/cfg/src/branch/main/[main]
+
 Configuration files root directory files pre-alpha development and alpha testing occurs in this
 branch. +
 Feature-complete modifications of this branch are merged to beta branch for beta testing.
 
-=== https://git.inferencium.net/Inferencium/cfg/src/branch/desktop/[desktop] +
+=== https://git.inferencium.net/Inferencium/cfg/src/branch/desktop/[desktop]
+
 Desktop configuration files pre-alpha development and alpha testing occurs in this branch. +
 Feature-complete modifications of this branch are merged to beta branch for beta testing.
 
-=== https://git.inferencium.net/Inferencium/cfg/src/branch/server/[server] +
+=== https://git.inferencium.net/Inferencium/cfg/src/branch/server/[server]
+
 Server configuration files pre-alpha development and alpha testing occurs in this branch. +
 Feature-complete modifications of this branch are merged to beta branch for beta testing.
 
-=== https://git.inferencium.net/Inferencium/cfg/src/branch/license/[license] +
+=== https://git.inferencium.net/Inferencium/cfg/src/branch/license/[license]
+
 Configuration files license files pre-alpha and alpha testing occurs in this branch. +
 Feature-complete modifications of this branch are merged to beta branch for beta testing.
 
-=== https://git.inferencium.net/Inferencium/cfg/src/branch/beta/[beta] +
+=== https://git.inferencium.net/Inferencium/cfg/src/branch/beta/[beta]
+
 Feature-complete beta testing of merged code from development branches occurs in this branch. +
 Merges from development branches to this branch are squashed, and the updated versions of the
 individual files are mentioned in the commit messages.
 
-=== https://git.inferencium.net/Inferencium/cfg/src/branch/stable/[stable] +
+=== https://git.inferencium.net/Inferencium/cfg/src/branch/stable/[stable]
+
 Feature-complete and tested versions from beta branch are stored in this branch. +
 Merges from beta branch to this branch are squashed, and the updated versions of the individual
 files are mentioned in the commit messages. +
