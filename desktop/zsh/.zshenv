@@ -1,10 +1,10 @@
 # Inferencium
-# ZSH - env
+# ZSH - Environmental Variables
 
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 4.0.0.10
+# Version: 4.1.1.15
 
 
 PATH="/bin/:/usr/bin/:/usr/local/bin/"
@@ -23,3 +23,6 @@ CONFIG_PROTECT="/etc/alacritty/ \
 				/etc/sway/ \
 				/etc/waybar/ \
 				/etc/zsh/"
+LD_PRELOAD="/usr/local/lib/libhardened_malloc.so"
+FZF_DEFAULT_OPTS="--extended"
+#ZDOTDIR="~/.config/zsh/"
