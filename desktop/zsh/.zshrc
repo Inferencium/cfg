@@ -4,7 +4,7 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 8.0.0.26
+# Version: 8.0.1.27
 
 
 # Prompt
@@ -22,7 +22,7 @@ bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 
 # zstyle
-zstyle :compinstall filename '~/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 zstyle ':completion:*' menu select
 zstyle ':vcs_info:git:*' formats '%r%f (%b)'
 zstyle ':vcs_info:*' enable git
@@ -35,7 +35,7 @@ precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
 
 # History
-HISTFILE=~/.zsh-history
+HISTFILE=$HOME/.zsh-history
 HISTSIZE=1024
 SAVEHIST=1024
 
@@ -50,12 +50,12 @@ fi
 
 # Aliases
 ## Global
-if [[ -f ~/.zsh-alias-global ]]; then
-    . ~/.zsh-alias-global
+if [[ -f $HOME/.zsh-alias-global ]]; then
+    . $HOME/.zsh-alias-global
 fi
 ## User
-if [[ -f ~/.zsh-alias-user ]]; then
-    . ~/.zsh-alias-user
+if [[ -f $HOME/.zsh-alias-user ]]; then
+    . $HOME/.zsh-alias-user
 fi
 
 # fzf
