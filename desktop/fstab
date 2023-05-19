@@ -4,7 +4,7 @@
 # Copyright 2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 2.0.1.4
+# Version: 2.0.2.5
 
 
 # The root filesystem should have a pass number of either 0 or 1.
@@ -13,7 +13,7 @@
 # <fs>			<mountpoint>	<type>		<opts>		<dump/pass>
 # Local filesystems
 ## boot
-PARTUUID=[REDACTED]		/boot/			ext4		noauto,noatime					1 2
+PARTUUID=[REDACTED]		/boot/			vfat		noauto,noatime					1 2
 ## swap
 /dev/mapper/swap									none			swap		defaults						0 0
 ## root
