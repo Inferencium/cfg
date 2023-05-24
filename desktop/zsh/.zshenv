@@ -4,7 +4,7 @@
 # Copyright 2022-2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 4.1.3.17
+# Version: 4.2.0.18
 
 
 export PATH="/bin/:/usr/bin/:/usr/local/bin/"
@@ -24,5 +24,6 @@ export CONFIG_PROTECT="/etc/alacritty/ \
 						/etc/waybar/ \
 						/etc/zsh/"
 export LD_PRELOAD="/usr/local/lib/libhardened_malloc.so"
+export TZ="Europe/London"
 export FZF_DEFAULT_OPTS="--extended"
 # export ZDOTDIR="~/.config/zsh/"
