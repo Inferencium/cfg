@@ -54,5 +54,5 @@ https://src.inferencium.net/Inferencium/cfg/src/branch/stable/license/BSD-3-Clau
 license*. +
  +
 *Excluding Linux configuration file(s), which are licensed under
-https://src.inferencium.net/Inferencium/cfg/src/branch/stable/license/GPL-2.0-only.txt[GPL v2]
+https://src.inferencium.net/Inferencium/cfg/src/branch/stable/license/GPL-2.0-only.txt[GPLv2]
 license.
