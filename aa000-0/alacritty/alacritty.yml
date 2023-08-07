@@ -1,9 +1,10 @@
+# Inferencium - aa000-0
 # Alacritty - Configuration
 
 # Copyright 2022 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 3.0.0.4
+# Version: 3.0.1.5
 
 
 # Imports are loaded in order, skipping all missing files, with the importing
