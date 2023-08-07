@@ -23,7 +23,7 @@ Feature-complete modifications of this branch are merged to beta branch for beta
 
 === https://src.inferencium.net/Inferencium/cfg/src/branch/xb000-0/[xb000-0]
 
-System xa000-0 configuration files pre-alpha development and alpha testing occurs in this branch. +
+System xb000-0 configuration files pre-alpha development and alpha testing occurs in this branch. +
 Feature-complete modifications of this branch are merged to beta branch for beta testing.
 
 === https://src.inferencium.net/Inferencium/cfg/src/branch/license/[license]
