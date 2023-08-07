@@ -1,10 +1,10 @@
 # Inferencium
 # Portage - Set - Toolchain - LLVM
 
-# Copyright 2022-2023 Jake Winters
+# Copyright 2022 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 3.1.0.6
+# Version: 3.1.1.7
 
 
 sys-devel/clang

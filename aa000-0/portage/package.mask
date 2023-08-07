@@ -1,10 +1,10 @@
 # Inferencium
 # Portage - package.mask
 
-# Copyright 2022-2023 Jake Winters
+# Copyright 2022 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 5.0.0.6
+# Version: 5.0.1.7
 
 
 # Global

@@ -1,10 +1,10 @@
 " Inferencium
 " Neovim - Configuration
 
-" Copyright 2022-2023 Jake Winters
+" Copyright 2022 Jake Winters
 " SPDX-License-Identifier: BSD-3-Clause-Clear
 
-" Version: 2.0.0.7
+" Version: 2.0.1.8
 
 
 " Editor.

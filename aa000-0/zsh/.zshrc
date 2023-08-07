@@ -1,10 +1,10 @@
 # Inferencium
 # ZSH - rc
 
-# Copyright 2022-2023 Jake Winters
+# Copyright 2022 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 8.0.1.27
+# Version: 8.0.2.28
 
 
 # Prompt

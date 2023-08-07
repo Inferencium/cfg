@@ -1,10 +1,10 @@
 # Inferencium
 # ZSH - Environmental Variables
 
-# Copyright 2022-2023 Jake Winters
+# Copyright 2022 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
-# Version: 4.2.0.18
+# Version: 4.2.1.19
 
 
 export PATH="/bin/:/usr/bin/:/usr/local/bin/"
