@@ -11,14 +11,19 @@ Configuration files root directory files pre-alpha development and alpha testing
 branch. +
 Feature-complete modifications of this branch are merged to beta branch for beta testing.
 
-=== https://src.inferencium.net/Inferencium/cfg/src/branch/desktop/[desktop]
+=== https://src.inferencium.net/Inferencium/cfg/src/branch/aa000-0/[aa000-0]
 
-Desktop configuration files pre-alpha development and alpha testing occurs in this branch. +
+System aa000-0 configuration files pre-alpha development and alpha testing occurs in this branch. +
 Feature-complete modifications of this branch are merged to beta branch for beta testing.
 
-=== https://src.inferencium.net/Inferencium/cfg/src/branch/server/[server]
+=== https://src.inferencium.net/Inferencium/cfg/src/branch/xa000-0/[xa000-0]
 
-Server configuration files pre-alpha development and alpha testing occurs in this branch. +
+System xa000-0 configuration files pre-alpha development and alpha testing occurs in this branch. +
+Feature-complete modifications of this branch are merged to beta branch for beta testing.
+
+=== https://src.inferencium.net/Inferencium/cfg/src/branch/xb000-0/[xb000-0]
+
+System xa000-0 configuration files pre-alpha development and alpha testing occurs in this branch. +
 Feature-complete modifications of this branch are merged to beta branch for beta testing.
 
 === https://src.inferencium.net/Inferencium/cfg/src/branch/license/[license]
