@@ -1,0 +1,15 @@
+// Inferencium
+// Midnight Commander - Keymap
+
+// Copyright 2022-2023 Jake Winters
+// SPDX-License-Identifier: BSD-3-Clause-Clear
+
+// Version: 2.0.0.3
+
+
+[main:empty-cmdline]
+ChangePanel = tab
+[main]
+ChangePanel =
+[input]
+Complete = tab; alt-tab

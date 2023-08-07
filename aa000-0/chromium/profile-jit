@@ -1,0 +1,16 @@
+// Chromium - Profile - JIT
+
+// Copyright 2022-2023 Jake Winters
+// SPDX-License-Identifier: BSD-3-Clause-Clear
+
+// Version: 2.0.0.3
+
+
+[Desktop Entry]
+Name=Chromium (profile_name)
+Comment=
+Exec=chromium --user-data-dir=/home/user/.config/chromium/profile_name
+Terminal=false
+Type=Application
+Icon=chromium
+Categories=Network;

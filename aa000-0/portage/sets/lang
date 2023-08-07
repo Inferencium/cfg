@@ -1,0 +1,26 @@
+# Inferencium
+# Portage - Set - Programming Languages
+
+# Copyright 2023 Jake Winters
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
+# Version: 2.0.0.3
+
+
+# Packages which contain or bootstrap programming languages. These packages should be recompiled
+# after each toolchain update/change, and all software compiled using these programming languages
+# should be recompiled using the recompiled programming languages, afterwards.
+dev-lang/duktape
+dev-lang/go
+dev-lang/lua
+dev-lang/luajit
+dev-lang/nasm
+dev-lang/perl
+dev-lang/python
+dev-lang/python-exec
+dev-lang/python-exec-conf
+dev-lang/rust
+dev-lang/swig
+dev-lang/tcl
+dev-lang/vala
+dev-lang/yasm

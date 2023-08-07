@@ -1,0 +1,39 @@
+From 1fb3b0d59e41dbef1f93e2194e1827a11b8b9f45 Mon Sep 17 00:00:00 2001
+From: Alfred Wingate <parona@protonmail.com>
+Date: Mon, 21 Feb 2022 20:24:09 +0200
+Subject: [PATCH] configure.ac: check for backtrace function only if execinfo.h
+ is found
+
+* llvm-unwindlib has backtrace function defined so it might lead to a
+  false result in the test otherwise on musl systems which dont have
+  execinfo.h
+
+Signed-off-by: Alfred Wingate <parona@protonmail.com>
+---
+ configure.ac | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/configure.ac b/configure.ac
+index 698051f..644bd06 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -161,6 +161,8 @@ AC_CHECK_HEADERS_ONCE(m4_flatten([
+ 	linux/ptrace.h
+ ]))
+ 
++AC_CHECK_HEADER(execinfo.h, AC_DEFINE(HAVE_EXECINFO_H) AC_CHECK_FUNCS_ONCE(backtrace))
++
+ dnl Checks for typedefs, structures, and compiler characteristics.
+ dnl Do this after all headers have been checked.
+ AC_C_CONST
+@@ -187,7 +189,6 @@ AC_FUNC_LSTAT_FOLLOWS_SLASHED_SYMLINK
+ AC_TYPE_SIGNAL
+ AC_FUNC_STAT
+ AC_CHECK_FUNCS_ONCE(m4_flatten([
+-	backtrace
+ 	clone
+ 	__clone2
+ 	creat64
+-- 
+2.35.1
+

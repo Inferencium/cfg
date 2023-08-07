@@ -1,0 +1,9 @@
+// Chromium - Flags - Default
+
+// Copyright 2022-2023 Jake Winters
+// SPDX-License-Identifier: BSD-3-Clause-Clear
+
+// Version: 3.0.0.3
+
+
+CHROMIUM_FLAGS="--enable-features=WebUIDarkMode --force-dark-mode --flag-switches-begin --disable-smooth-scrolling --flag-switches-end"

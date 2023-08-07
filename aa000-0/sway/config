@@ -1,0 +1,204 @@
+# Inferencium
+# Sway - Configuration
+
+# Copyright 2022-2023 Jake Winters
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
+# Version: 4.0.0.6
+
+
+# Set Mod key
+set $mod Mod4
+
+# Reload Sway configuration file
+bindsym $mod+Shift+c reload
+
+# Restart Sway
+bindsym $mod+Shift+r restart
+
+# Exit Sway (exit Wayland session)
+bindsym $mod+Shift+e exec swaynag -t warning -m 'Exit Sway?' -b 'Yes' 'swaymsg exit'
+
+# Start terminal
+bindsym $mod+Return exec alacritty
+
+# Kill focused window
+bindsym $mod+Shift+q kill
+
+# Change focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Move focused window
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# Split in horizontal orientation
+bindsym $mod+h split h
+
+# Split in vertical orientation
+bindsym $mod+v split v
+
+# Enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# Change container layout
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Change focus between tiling/floating windows
+bindsym $mod+space focus mode_toggle
+
+# Pop-up windows control
+popup_during_fullscreen smart
+
+# Focus the parent container
+bindsym $mod+a focus parent
+
+# Window activation focus control
+focus_on_window_activation smart
+
+# Workspaces
+set $ws1 "0"
+set $ws2 "1"
+set $ws3 "2"
+set $ws4 "3"
+set $ws5 "4"
+
+# Switch workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+
+# Move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+
+# Move window
+## Move window via shortcut
+bindsym $mod+m focus floating; mode "move"
+mode "move" {
+    # Move mode shortcuts
+    bindsym J move up 20px
+    bindsym K move down 20x
+    bindsym N move left 20px
+    bindsym M move right 20px
+
+    ## Return to normal mode
+    bindsym $mod+m mode "default"
+}
+
+# Resize window
+## Resize window via shortcut
+bindsym $mod+r mode "resize"
+mode "resize" {
+        ## Resize mode shortcuts
+        bindsym N resize shrink width 10 px or 10 ppt
+        bindsym K resize grow height 10 px or 10 ppt
+        bindsym J resize shrink height 10 px or 10 ppt
+        bindsym M resize grow width 10 px or 10 ppt
+
+        ## Return to normal mode
+        bindsym $mod+r mode "default"
+}
+
+# Volume control
+## Activate volume up key
+bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+
+## Activate volume down key
+bindsym XF86AudioLowerVolume exec amixer -q -D pulse sset Master 5%-
+## Activate volume mute key
+bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle
+
+# Display brightness control
+## Activate display brightness up key
+bindsym XF86MonBrightnessUp exec "brightnessctl s 5%+"
+## Activate display brightness down key
+bindsym XF86MonBrightnessDown exec "brightnessctl s 5%-"
+
+# Keyboard layout
+input * {
+	xkb_layout gb,jp
+	xkb_options grp:alt_space_toggle
+	}
+
+# Disable mouse focus
+focus_follows_mouse		no
+
+# Disable mouse buttons
+## Left mouse button
+bindsym button1			nop
+## Middle mouse button
+bindsym button2			nop
+## Right mouse button
+bindsym button3			nop
+## Scroll wheel up
+bindsym button4			nop
+## Scroll wheel down
+bindsym button5			nop
+## Scroll wheel right
+bindsym button6			nop
+## Scroll wheel left
+bindsym button7			nop
+
+# Media control
+## Play media key
+bindsym XF86AudioPlay exec playerctl play
+## Pause media key
+#bindsym XF86AudioPause exec playerctl pause
+## Previous media key
+bindsym XF86AudioPrev exec playerctl previous
+## Next media key
+bindsym XF86AudioNext exec playerctl next
+
+# System power control
+## Shut down system
+#bindsym XF86PowerOff exec alacritty -e "shutdown -h 0"
+
+# Font for window titles
+font pango:monospace 9
+
+# Colors
+## Class                Border  Backgr  Text    Indicator Child_border
+client.focused          #585858 #585858 #ffffff #2e9ef4   #585858
+client.focused_inactive #5f676a #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #222222 #222222 #888888 #292d2e   #222222
+client.urgent           #c79500 #c79500 #000000 #900000   #585858
+client.placeholder      #0c0c0c #0c0c0c #ffffff #000000   #0c0c0c
+client.background       #ffffff
+
+# Open specific software on specific workspaces
+#assign [class="KeePassXC"] $ws2
+
+
+# External software
+## Execute Waybar
+exec waybar
+
+## Execute Dunst
+exec dunst
+
+## Execute PulseAudio
+exec pulseaudio -D
+
+## Set desktop background
+#exec_always --no-startup-id /scr/background-set.sh
+
+## Execute Wofi
+bindsym $mod+d exec "wofi --show drun"
+
+# Screen locker
+bindsym $mod+l exec alacritty -e swaylock -c 000000
+ exec swayidle -w \
+          timeout 600 'swaylock -f -c 000000' \
+          timeout 1200 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+          before-sleep 'swaylock -f -c 000000'
