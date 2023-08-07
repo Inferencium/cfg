@@ -2,9 +2,9 @@
 # Portage - Set - Toolchain - LLVM
 
 # Copyright 2022 Jake Winters
-# SPDX-License-Identifier: BSD-3-Clause-Clear
+# SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 3.1.1.7
+# Version: 4.0.0.8
 
 
 sys-devel/clang

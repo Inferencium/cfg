@@ -2,9 +2,9 @@
 # ZSH - Environmental Variables
 
 # Copyright 2022 Jake Winters
-# SPDX-License-Identifier: BSD-3-Clause-Clear
+# SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 4.2.1.19
+# Version: 5.0.0.20
 
 
 export PATH="/bin/:/usr/bin/:/usr/local/bin/"

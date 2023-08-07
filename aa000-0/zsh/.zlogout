@@ -2,9 +2,9 @@
 # ZSH - Logout
 
 # Copyright 2023 Jake Winters
-# SPDX-License-Identifier: BSD-3-Clause-Clear
+# SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 0.1.0.1
+# Version: 1.0.0.2
 
 
 # Kill ssh-agent on logout to purge cached SSH key passphrase from memory

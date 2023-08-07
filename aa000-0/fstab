@@ -2,9 +2,9 @@
 # fstab - Configuration
 
 # Copyright 2023 Jake Winters
-# SPDX-License-Identifier: BSD-3-Clause-Clear
+# SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 2.0.2.5
+# Version: 3.0.0.6
 
 
 # The root filesystem should have a pass number of either 0 or 1.

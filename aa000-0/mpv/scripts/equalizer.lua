@@ -2,9 +2,9 @@
 -- MPV - Script - Equalizer
 
 -- Copyright 2022 Jake Winters
--- SPDX-License-Identifier: BSD-3-Clause-Clear
+-- SPDX-License-Identifier: BSD-3-Clause
 
--- Version: 2.0.1.5
+-- Version: 3.0.0.6
 
 
 --[[

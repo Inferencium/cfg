@@ -2,9 +2,9 @@
 # ZSH - rc
 
 # Copyright 2022 Jake Winters
-# SPDX-License-Identifier: BSD-3-Clause-Clear
+# SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 8.0.2.28
+# Version: 9.0.0.29
 
 
 # Prompt

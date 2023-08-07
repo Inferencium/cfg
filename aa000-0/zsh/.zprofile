@@ -2,9 +2,9 @@
 # ZSH - Profile
 
 # Copyright 2023 Jake Winters
-# SPDX-License-Identifier: BSD-3-Clause-Clear
+# SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 1.1.1.4
+# Version: 2.0.0.5
 
 
 # Start ssh-agent on login
