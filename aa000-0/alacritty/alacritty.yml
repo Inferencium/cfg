@@ -1,9 +1,9 @@
 # Alacritty - Configuration
 
-# Copyright 2022-2023 Jake Winters
-# SPDX-License-Identifier: BSD-3-Clause-Clear
+# Copyright 2022 Jake Winters
+# SPDX-License-Identifier: BSD-3-Clause
 
-# Version: 2.0.0.2
+# Version: 3.0.0.4
 
 
 # Imports are loaded in order, skipping all missing files, with the importing
