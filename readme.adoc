@@ -3,7 +3,8 @@
 Inferencium configuration files.
 
 
-== Branches
+[#branches]
+== <<branches,Branches>>
 
 === https://src.inferencium.net/Inferencium/cfg/src/branch/main/[main]
 
@@ -45,14 +46,16 @@ files are mentioned in the commit messages. +
 This branch contains code used in production.
 
 
-== Security
+[#security]
+== <<security,Security>>
 
 All files are checked for security issues; however, it is always the user's responsibility to audit
 the code before installing and/or executing it. Inferencium takes no responsibility for any security
 issues which may arise due to usage of this repository.
 
 
-== Licensing
+[#licensing]
+== <<licensing,Licensing>>
 
 All content is licensed under
 https://src.inferencium.net/Inferencium/cfg/src/branch/stable/license/BSD-3-Clause-Clear.txt[BSD 3-Clause Clear]
