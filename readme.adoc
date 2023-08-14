@@ -4,7 +4,7 @@
 Inferencium configuration files.
 
 
-[#branches]
+[id=branches]
 == [.h-link]#<<branches,Branches>>#
 
 === https://src.inferencium.net/Inferencium/cfg/src/branch/main/[main]
@@ -47,7 +47,7 @@ files are mentioned in the commit messages. +
 This branch contains code used in production.
 
 
-[#security]
+[id=security]
 == [.h-link]#<<security,Security>>#
 
 All files are checked for security issues; however, it is always the user's responsibility to audit
@@ -55,7 +55,7 @@ the code before installing and/or executing it. Inferencium takes no responsibil
 issues which may arise due to usage of this repository.
 
 
-[#licensing]
+[id=licensing]
 == [.h-link]#<<licensing,Licensing>>#
 
 All content is licensed under
