@@ -1,6 +1,6 @@
 # Inferencium - aa000-0
 # Filesystem Table
-# Version: 4.0.0-alpha.33
+# Version: 4.0.0-alpha.34
 
 # Copyright 2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause
@@ -31,4 +31,4 @@ tmpfs	/usr/local/src/compile/	tmpfs	size=16G,uid=root,gid=root,mode=0700,noauto,
 ## /home/
 xa000-1:/srv/nfs/home/	/home/	nfs	auto,_netdev,nfsvers=4.0,rw,nosuid	0 0
 ## Stable Diffusion - S1 - Outputs
-xa000-1:/srv/nfs/s1/mmd/img/stable_diffusion/	/srv/s1/mmd/img/stable_diffusion/	nfs	auto,_netdev,nfsvers=4.0,ro,nosuid	0 0
+xa000-1:/srv/nfs/s1/img/stable_diffusion/	/srv/s1/img/stable_diffusion/	nfs	auto,_netdev,nfsvers=4.0,ro,nosuid	0 0
