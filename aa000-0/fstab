@@ -1,13 +1,13 @@
 # Inferencium - aa000-0
 # Filesystem Table
-# Version: 4.0.0-alpha.2
+# Version: 4.0.0-alpha.3
 
 # Copyright 2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause
 
 
-# The root filesystem should have a pass number of either 0 or 1.
-# All other filesystems should have a pass number of 0 or greater than 1.
+# The root filesystem should have a pass number of either 0 or 1; all other filesystems should have
+# a pass number of 0 or greater than 1.
 
 # <fs>			<mountpoint>	<type>		<opts>		<dump/pass>
 # Local filesystems
