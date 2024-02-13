@@ -1,24 +1,34 @@
 # Inferencium - aa000-0
-# fstab - Configuration
+# Filesystem Table
+# Version: 4.0.0-beta.1
 
 # Copyright 2023 Jake Winters
-# SPDX-License-Identifier: BSD-3-Clause-Clear
-
-# Version: 2.0.2.5
+# SPDX-License-Identifier: BSD-3-Clause
 
 
-# The root filesystem should have a pass number of either 0 or 1.
-# All other filesystems should have a pass number of 0 or greater than 1.
+# The root filesystem should have a pass number of either 0 or 1; all other filesystems should have
+# a pass number of 0 or greater than 1.
 
 # <fs>			<mountpoint>	<type>		<opts>		<dump/pass>
+
 # Local filesystems
-## boot
-PARTUUID=[REDACTED]		/boot/			vfat		noauto,noatime					1 2
+## /boot/
+UUID="[REDACTED]"	/boot/	vfat	noauto,noatime,noexec,nosuid	0 0
+## /
+UUID="[REDACTED]"	/	bcachefs	degraded,rw	0 0
+## /run/
+tmpfs	/run/	tmpfs	size=4G,uid=root,gid=root,mode=0755,auto,noatime	0 0
+## /tmp/
+tmpfs	/tmp/	tmpfs	size=8G,uid=root,gid=root,mode=1777,auto,noatime	0 0
+## /var/tmp/portage/
+tmpfs	/var/tmp/portage/	tmpfs	size=32G,uid=portage,gid=portage,mode=0775,auto,noatime,nodev,nosuid	0 0
+## /usr/local/src/compile/
+tmpfs	/usr/local/src/compile/	tmpfs	size=16G,uid=root,gid=root,mode=0700,noauto,noatime,nodev,nosuid	0 0
 ## swap
-/dev/mapper/swap									none			swap		defaults						0 0
-## root
-UUID=[REDACTED]			/				btrfs		acl,barrier,datacow,datasum		0 1
-## home
-xa000.inferencium.net:/srv/nfs/home/				/home/			nfs4		rw,_netdev,vers=4				0 0
-## tmpfs
-tmpfs						/var/tmp/portage/	tmpfs		size=16G,uid=portage,gid=portage,mode=775,nosuid,noatime,nodev		0 0
+/dev/mapper/swap	none	swap	auto,noatime,noexec,nosuid	0 0
+
+# Remote filesystems
+## /home/
+xa000-1:/srv/nfs/home/	/home/	nfs	auto,_netdev,nfsvers=4.0,rw,nosuid	0 0
+## Stable Diffusion - S1 - Outputs
+xa000-1:/srv/nfs/s1/img/stable_diffusion/	/srv/s1/img/stable_diffusion/	nfs	auto,_netdev,nfsvers=4.0,ro,nosuid	0 0
