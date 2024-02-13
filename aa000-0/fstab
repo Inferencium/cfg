@@ -1,10 +1,9 @@
 # Inferencium - aa000-0
 # fstab - Configuration
+# Version: 4.0.0-alpha.1
 
 # Copyright 2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause
-
-# Version: 3.0.0.6
 
 
 # The root filesystem should have a pass number of either 0 or 1.
