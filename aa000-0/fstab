@@ -1,6 +1,6 @@
 # Inferencium - aa000-0
 # Filesystem Table
-# Version: 4.0.0-alpha.13
+# Version: 4.0.0-alpha.14
 
 # Copyright 2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause
@@ -21,4 +21,4 @@ xa000.inferencium.net:/srv/nfs/home/				/home/			nfs4		rw,_netdev,vers=4				0 0
 ## tmpfs
 tmpfs						/var/tmp/portage/	tmpfs		size=16G,uid=portage,gid=portage,mode=775,nosuid,noatime,nodev		0 0
 ## swap
-/dev/mapper/swap	none	swap	auto,noatime,noexec	0 0
+/dev/mapper/swap	none	swap	auto,noatime,noexec,nosuid	0 0
