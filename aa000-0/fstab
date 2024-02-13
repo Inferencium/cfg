@@ -1,6 +1,6 @@
 # Inferencium - aa000-0
 # Filesystem Table
-# Version: 4.0.0-alpha.7
+# Version: 4.0.0-alpha.8
 
 # Copyright 2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause
@@ -13,7 +13,7 @@
 
 # Local filesystems
 ## /boot/
-UUID=[REDACTED]	/boot/	vfat	noauto,noatime,noexec	1 2
+UUID=[REDACTED]	/boot/	vfat	noauto,noatime,noexec,nosuid	1 2
 ## swap
 /dev/mapper/swap									none			swap		defaults						0 0
 ## /
