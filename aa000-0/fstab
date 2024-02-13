@@ -1,6 +1,6 @@
 # Inferencium - aa000-0
 # Filesystem Table
-# Version: 4.0.0-alpha.16
+# Version: 4.0.0-alpha.17
 
 # Copyright 2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause
@@ -15,7 +15,7 @@
 ## /boot/
 UUID=[REDACTED]	/boot/	vfat	noauto,noatime,noexec,nosuid	0 0
 ## /
-UUID=[REDACTED]	/	bcachefs	degraded	0 1
+UUID=[REDACTED]	/	bcachefs	degraded,rw	0 1
 ## /home/
 xa000.inferencium.net:/srv/nfs/home/				/home/			nfs4		rw,_netdev,vers=4				0 0
 ## tmpfs
