@@ -1,6 +1,6 @@
 # Inferencium - aa000-0
 # Filesystem Table
-# Version: 4.0.0-alpha.3
+# Version: 4.0.0-alpha.4
 
 # Copyright 2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause
@@ -10,6 +10,7 @@
 # a pass number of 0 or greater than 1.
 
 # <fs>			<mountpoint>	<type>		<opts>		<dump/pass>
+
 # Local filesystems
 ## boot
 PARTUUID=[REDACTED]		/boot/			vfat		noauto,noatime					1 2
