@@ -1,6 +1,6 @@
 # Inferencium - aa000-0
 # dm-crypt - Configuration
-# Version: 3.0.0-alpha.4
+# Version: 3.0.0-alpha.5
 
 # Copyright 2023 Jake Winters
 # SPDX-License-Identifier: BSD-3-Clause
@@ -19,5 +19,5 @@ dmcrypt_retries="5"
 ## These should come first so no keys make their way into unencrypted swap.
 swap="swap"
 source="PARTUUID=[REDACTED]"
-options="--cipher aes-xts-plain64 --key-size 512 --key-file /dev/urandom"
+options="--offset 2048 --cipher aes-xts-plain64 --key-size 512 --key-file /dev/urandom"
 
