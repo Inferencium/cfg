@@ -1,0 +1,28 @@
+root = true
+
+[*]
+indent_style = tab
+indent_size = 4
+tab_width = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = false
+
+[*.{go,tmpl,html}]
+indent_style = tab
+
+[templates/custom/*.tmpl]
+insert_final_newline = false
+
+[templates/swagger/v1_json.tmpl]
+indent_style = space
+
+[templates/user/auth/oidc_wellknown.tmpl]
+indent_style = space
+
+[Makefile]
+indent_style = tab
+
+[*.svg]
+insert_final_newline = false
