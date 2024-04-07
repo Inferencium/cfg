@@ -76,8 +76,7 @@ may arise due to usage of this repository.
 == <<licensing,Licensing>>
 
 All content (excluding Linux configuration files) is licensed under
-https://src.inferencium.net/Inferencium/cfg/src/branch/stable/license/BSD-3-Clause-Clear.txt[BSD 3-Clause Clear]
-license.
+https://src.inferencium.net/Inferencium/cfg/src/branch/stable/license/BSD-3-Clause.txt[BSD 3-Clause License].
 
 Linux configuration files are licensed under
 https://src.inferencium.net/Inferencium/cfg/src/branch/stable/license/GPL-2.0-only.txt[GPLv2]
