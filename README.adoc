@@ -24,6 +24,12 @@ System xa000-0 configuration files pre-alpha development and alpha testing occur
 
 Feature-complete modifications of this branch are merged to beta branch for beta testing.
 
+=== https://src.inferencium.net/Inferencium/cfg/src/branch/xa000-1[xa000-1]
+
+System xa000-1 configuration files pre-alpha development and alpha testing occurs in this branch.
+
+Feature-complete modifications of this branch are merged to beta branch for beta testing.
+
 === https://src.inferencium.net/Inferencium/cfg/src/branch/xb000-0[xb000-0]
 
 System xb000-0 configuration files pre-alpha development and alpha testing occurs in this branch.
