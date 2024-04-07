@@ -1,0 +1,83 @@
+= Configuration
+
+Inferencium configuration files.
+
+
+[id=branch]
+== <<branch,Branches>>
+
+=== https://src.inferencium.net/Inferencium/cfg/src/branch/main[main]
+
+Configuration files root directory files pre-alpha development and alpha testing occurs in this branch.
+
+Feature-complete modifications of this branch are merged to beta branch for beta testing.
+
+=== https://src.inferencium.net/Inferencium/cfg/src/branch/aa000-0[aa000-0]
+
+System aa000-0 configuration files pre-alpha development and alpha testing occurs in this branch.
+
+Feature-complete modifications of this branch are merged to beta branch for beta testing.
+
+=== https://src.inferencium.net/Inferencium/cfg/src/branch/xa000-0[xa000-0]
+
+System xa000-0 configuration files pre-alpha development and alpha testing occurs in this branch.
+
+Feature-complete modifications of this branch are merged to beta branch for beta testing.
+
+=== https://src.inferencium.net/Inferencium/cfg/src/branch/xa000-1[xa000-1]
+
+System xa000-1 configuration files pre-alpha development and alpha testing occurs in this branch.
+
+Feature-complete modifications of this branch are merged to beta branch for beta testing.
+
+=== https://src.inferencium.net/Inferencium/cfg/src/branch/xa000-2[xa000-2]
+
+System xa000-2 configuration files pre-alpha development and alpha testing occurs in this branch.
+
+Feature-complete modifications of this branch are merged to beta branch for beta testing.
+
+=== https://src.inferencium.net/Inferencium/cfg/src/branch/xb000-0[xb000-0]
+
+System xb000-0 configuration files pre-alpha development and alpha testing occurs in this branch.
+
+Feature-complete modifications of this branch are merged to beta branch for beta testing.
+
+=== https://src.inferencium.net/Inferencium/cfg/src/branch/license[license]
+
+Configuration files license files pre-alpha and alpha testing occurs in this branch.
+
+Feature-complete modifications of this branch are merged to beta branch for beta testing.
+
+=== https://src.inferencium.net/Inferencium/cfg/src/branch/beta[beta]
+
+Feature-complete beta testing of merged code from development branches occurs in this branch.
+
+Merges from development branches to this branch are squashed, and the updated versions of the individual files are
+mentioned in the commit messages.
+
+=== https://src.inferencium.net/Inferencium/cfg/src/branch/stable[stable]
+
+Feature-complete and tested versions from beta branch are stored in this branch.
+
+Merges from beta branch to this branch are squashed, and the updated versions of the individual files are mentioned in
+the commit messages.
+
+This branch contains code used in production.
+
+
+[id=security]
+== <<security,Security>>
+
+All files are checked for security issues; however, Inferencium takes no responsibility for any security issues which
+may arise due to usage of this repository.
+
+
+[id=licensing]
+== <<licensing,Licensing>>
+
+All content (excluding Linux configuration files) is licensed under
+https://src.inferencium.net/Inferencium/cfg/src/branch/stable/license/BSD-3-Clause.txt[BSD 3-Clause License].
+
+Linux configuration files are licensed under
+https://src.inferencium.net/Inferencium/cfg/src/branch/stable/license/GPL-2.0-only.txt[GPLv2]
+license.
